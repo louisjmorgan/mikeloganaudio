@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from 'react';
@@ -22,11 +23,15 @@ import './styles.css';
 import ScrollToTop from './ScrollToTop';
 
 const App = ({ title }) => {
-  const heroRef = useRef();
+  const refs = {
+    heroRef: useRef(null),
+    reelRef: useRef(null),
+  };
+
   const [isMobile, setMobile] = useState(false);
 
   const hamburger = document.querySelector('.hamburger');
-  const navbar = document.querySelector('.navbar');
+  const navbar = document.querySelector('.nav-wrapper');
 
   function mobileMenu() {
     setMobile((prevState) => !prevState);
@@ -43,67 +48,78 @@ const App = ({ title }) => {
 
   navLink.forEach((n) => n.addEventListener('click', closeMenu));
 
-  function handleDownBtn() {
-    heroRef.current.scrollIntoView({ behavior: 'smooth' });
-    console.log('shag birds');
+  function handleDownBtn(e) {
+    console.log(e);
+    if (e.target.id === 'to-hero')
+      refs.heroRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (e.target.id === 'to-reel') {
+      refs.reelRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div>
         <nav name="nav">
-          <div className={`navbar ${isMobile ? 'active' : ''}`}>
-            <ul className="navlinks">
-              <li className="navlink">
-                <NavLink exact to="/" activeClassName="selected">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/reels" activeClassName="selected">
-                  Reels
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/more-content"
-                  activeClassName="selected"
+          <div className={`nav-wrapper ${isMobile ? 'active' : ''}`}>
+            <div className="navbar">
+              <ul className="navlinks">
+                <li className="navlink">
+                  <NavLink exact to="/" activeClassName="selected">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/reels" activeClassName="selected">
+                    Reels
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/more-content"
+                    activeClassName="selected"
+                  >
+                    More Content
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact" activeClassName="selected">
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+              <NavLink exact to="/">
+                <div className="logo">
+                  <img
+                    src={MikeLoganAudio}
+                    alt="Mike Logan Audio Logo"
+                  />
+                </div>
+              </NavLink>
+              <ul className="social-buttons">
+                <a
+                  href="https://soundcloud.com/mikeloganaudio"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  More Content
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact" activeClassName="selected">
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-            <div className="logo">
-              <img src={MikeLoganAudio} alt="Mike Logan Audio Logo" />
+                  <img src={Soundcloud} alt="soundcloud" />
+                </a>
+                <a
+                  href="https://www.instagram.com/mikeloganaudio/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Instagram} alt="instagram" />
+                </a>
+                <a
+                  href="https://www.twitter.com/mikeloganaudio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Twitter} alt="twitter" />
+                </a>
+              </ul>
             </div>
-            <ul className="social-buttons">
-              <a
-                href="https://soundcloud.com/mikeloganaudio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Soundcloud} alt="soundcloud" />
-              </a>
-              <a
-                href="https://www.instagram.com/mikeloganaudio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Instagram} alt="instagram" />
-              </a>
-              <a
-                href="https://www.twitter.com/mikeloganaudio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Twitter} alt="twitter" />
-              </a>
-            </ul>
           </div>
           <div className="mobile-nav">
             <button
@@ -115,12 +131,14 @@ const App = ({ title }) => {
               <span className="bar" />
               <span className="bar" />
             </button>
-            <div className="mobile-logo">
-              <img
-                src={MikeLoganAudio2}
-                alt="Mike Logan Audio Logo"
-              />
-            </div>
+            <NavLink exact to="/">
+              <div className="mobile-logo">
+                <img
+                  src={MikeLoganAudio2}
+                  alt="Mike Logan Audio Logo"
+                />
+              </div>
+            </NavLink>
           </div>
         </nav>
         <ScrollToTop />
@@ -135,7 +153,7 @@ const App = ({ title }) => {
             <Contact />
           </Route>
           <Route exact path="/">
-            <Home handleDownBtn={handleDownBtn} ref={heroRef} />
+            <Home handleDownBtn={handleDownBtn} ref={refs} />
           </Route>
         </Switch>
       </div>
