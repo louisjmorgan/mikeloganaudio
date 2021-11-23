@@ -18,7 +18,7 @@ const Reels = () => {
             />
           </div>
           <div className="reel">
-            <span>Game Audio Composition Reel 2021</span>
+            <span>Game Audio Composition Reel</span>
             <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/564597865?h=a24f152033"

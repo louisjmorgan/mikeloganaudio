@@ -152,7 +152,7 @@ const App = ({ title }) => {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route exact path="/">
+          <Route exact path="">
             <Home handleDownBtn={handleDownBtn} ref={refs} />
           </Route>
         </Switch>
