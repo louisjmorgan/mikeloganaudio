@@ -30,6 +30,10 @@ module.exports = {
       title: 'Mike Logan Audio',
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      template: path.resolve(__dirname, '..', 'src/404.html'),
+    }),
   ],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
