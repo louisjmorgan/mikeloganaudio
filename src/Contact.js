@@ -5,8 +5,11 @@ const Contact = () => {
   return (
     <main>
       <div className="contact-page">
+        <h2>Contact Me</h2>
         <span className="direct-contact">
-          Get in touch directly:&nbsp;
+          Feel free to get in touch with any enquiries, either by
+          emailing me or using the form below. I look forward to
+          hearing from you!&nbsp;
           <a href="mailto:mikeloganaudio@gmail.com">
             mikeloganaudio@gmail.com
           </a>
@@ -17,12 +20,21 @@ const Contact = () => {
             method="POST"
             className="contact-form"
           >
+            <label htmlFor="name">
+              Name:
+              <input type="text" name="name" id="full-name" />
+            </label>
             <label htmlFor="_replyto">
-              Your email:
-              <input type="email" name="_replyto" />
+              Email:
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                required
+              />
             </label>
             <label htmlFor="message">
-              Your message:
+              Message:
               <textarea name="message" />
             </label>
 

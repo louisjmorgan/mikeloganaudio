@@ -78,275 +78,37 @@ body {
 }
 
 
-nav {
-  width: 100%;
-  margin-bottom: 2rem;
-  z-index: 99999;
 
-}
-.navbar {
-  background: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: 1.25rem;
-  z-index: 99999;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-  
-}
 
-.navlinks {
-  margin-left: 3rem;
-  width: 33%;
-  order: 0;
-}
-
-.navlinks li {
-  padding: 0 1.5rem;
-  display: inline-block;
-  
-}
-
-.navlinks li a {
-  color: #fff6ce;
-  font-family: Roboto;
-  text-decoration: none;
-
-  font-size: 1.25rem;
-}
-
-.navlinks li :not(.selected):after {
-  margin-top: 0.75rem;
-  content: "";
-  display: block;
-  height: 0.25rem;
-  width: 0px;
-  transition: 0.3s;
-}
-
-.navlinks li :not(.selected):hover:after, .selected:after {
-  position: relative;
-  display: block;
-  margin-top: 0.75rem;
-  width: 100%;
-  height: 0.25rem;
-  content: "";
-  background-color:#fff6ce; ;
-  cursor: pointer;
-}
-
-
-
-.hamburger {
-  display: none;
-  padding: 3rem;
-  z-index: 9999;
-}
-
-.bar {
-  display: block;
-  width: 2rem;
-  height: 0.25rem;
-  margin: 0.5rem auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #fff6ce;
-}
-
-.logo {
-  justify-self: center;
-  order: 1;
-}
-
-.mobile-logo {
-  display: none;
-}
-
-.mobile-nav {
-  z-index: 99999;
-  background-color: black;
-}
-
-.logo img {
-  max-height: 6rem;
-  width: auto;
-  margin-bottom: -0.25rem;
-}
-
-.social-buttons {
-  margin-right: 3rem;
-  display: flex;
-  order: 2;
-  width: 33%;
-  justify-content: right;
-
-}
-
-.social-buttons img{
-  padding: 0 2rem;
-  display: inline-block;
-  width: 1.5rem;
-  height: auto;
-}
-.social-buttons img:after {
-  margin-top: 10px;
-  content: "";
-  display: block;
-  height: 4px;
-  width: 0px;
-  transition: 0.3s;
-}
-
-.social-buttons img:hover:after{
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  width: 100%;
-  height: 4px;
-  content: "";
-  background-color:#fff6ce; 
-}
-
-
-
-@media only screen and (max-width: 1500px) {
-  nav {
-    position: fixed;
-    background-color: black;
-    top: 0;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    
-  }
-
-  .nav-wrapper {
-
-    margin-top: 3.5rem;
-    position: fixed;
-    width: 100%;
-    height: 60vh;
-    overflow-y: auto;
-    left: -100%;
-    z-index: -1;
-    overflow-x: hidden;
-    transition: 0.2s ease-out;
-  }
-
-  .navbar {
-    position: relative;
-    margin-top: 0;
-    
-    flex-direction: column;
-    justify-content: space-between;
-    
-    
-    
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    align-items: start;
-   
-    
-    overflow-x: hidden;
-    
-  }
-
-  .navlinks {
-    padding: 5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
-    width: auto;
-    align-items: start;
-  }
-
-  .nav-wrapper.active {
-    left: 0;
  
-  }
-  
-  .navlinks li {
-    display: inline-block;
-    
-  }
-
-  .navlinks li a {
-    font-size: 2rem;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: flex;
-    padding: 1rem 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
-    overflow: hidden;
-    z-index: 99999;
-  }
-
-  .mobile-logo {
-    display: inline-block;
-    justify-self: center;
-    padding: 0 2rem;
-  }
-
-  .mobile-logo img {
-    max-height: 6rem;
-    width: auto;
-  }
-
-  .social-buttons {
-    justify-content: left;
-    padding: 3rem;
-  }
-
-  .social-buttons img {
-    width: 2rem;
-    height: auto;
-  }
-
-  .hamburger {
-    display: block;
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    z-index: 99999;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-      transform: translateY(0.75rem) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-0.75rem) rotate(-45deg);
-  }
-
-}
 
 
 
 
-@media only screen and (max-height: 600px) and (max-width: 1500px) {
+
+/* @media only screen and (max-height: 600px) and (max-width: 1500px) {
  .nav-wrapper {
    height: calc(100vh - 3.5rem);
  }
  .navbar {
   height: 50rem;
 }
-}
+} */
 
 @media only screen and (max-height: 450px) and (max-width: 1500px){
   
@@ -446,8 +208,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 5rem;
- 
-  
+
 }
 
 
@@ -494,7 +255,7 @@ main {
 }
 
 .hero-link a:hover, .hero-link:hover {
-  color: lightskyblue;
+  color: turquoise;
 }
 
 
@@ -559,9 +320,9 @@ main {
 }
 
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1500px) {
   html {
-    font-size: 14px;
+    font-size: 87.5%;
   }
 
   .arrow-down {
@@ -571,10 +332,13 @@ main {
 }
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   html {
-    font-size: 12px;
+    font-size: 75%;
   }
+
+
+
 
 
   .home-container {
@@ -623,31 +387,22 @@ main {
   
 }
 
-
-
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   html {
-    font-size: 10px;
+    font-size: 62.5%;
   }
 
 }
 
 
-@media only screen and (max-width: 700px) {
-  html {
-    font-size: 9px;
-  }
 
-}
+
+
 
 
 
 @media only screen and (max-width: 500px) {
-  html {
-    font-size: 7px;
-  }
- 
+
   
 
   .hero-text {
@@ -658,8 +413,8 @@ main {
 }
 
 @media only screen and (max-width: 450px) {
-  html {
-    font-size: 6px;
+  body {
+    font-size: 0.375rem;
   }
  
 
@@ -674,7 +429,7 @@ main {
 @media only screen and (max-width: 150px) {
 
 
-  html {
+  body {
     font-size: 4px;
   }
 }
@@ -918,27 +673,47 @@ main {
 /* CONTACT */
 
 .contact-page {
-  height: 50rem;
-  margin-bottom: 30rem;
+  display: block;
+  
+  margin: 7rem auto 3rem;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contact-page h2 {
+  color:#fff6ce;
+  font-family: 'Noto Serif', serif;
+  font-size: 4rem;
+  width: 20ch;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .direct-contact {
-  padding: 5rem 0 5rem;
-  color: #fff6ce;
-  font-size: 3rem;
+  padding: 4rem 0;
+  color: white;
+  font-size: 2rem;
   margin: 0 auto;
-  width: 80%;
+  width: 60ch;
   line-height: 1.5;
-  font-family: 'Noto Serif', serif;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:  center;
+  text-align: center;
 }
 
 .direct-contact a {
   display: block;
   color: #fff6ce;
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.direct-contact a:hover {
+  color: turquoise;
 }
 
 .form-container {
@@ -954,8 +729,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff6ce;
-  font-family: 'Noto Serif', serif;
+  color: white;
 }
 
 .contact-form label {
@@ -965,33 +739,37 @@ main {
 }
 
 .contact-form input, .contact-form textarea {
-  margin: 2rem 0 4rem;
+  margin: 2rem 0 2.5rem;
   display: block;
-  background-color: #fff6ce;
+  background-color: white;
   padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.5rem;
 }
 
 .contact-form textarea {
   height: 10rem;
   width: 50rem;
+  font-size: 2rem
 }
 
 .contact-form input {
-  height: 3rem;
+  height: 2rem;
   width: 50rem;
-  background-color: #fff6ce;
+  background-color: white;
+  font-size: 2rem;
   
 }
 
 .form-btn {
   width: 10rem;
-  
+  display: block;
   font-size: 1.75rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #fff6ce;
   align-self: center;
+  font-size: 1.5rem;
 }
 
 .form-btn:hover {
@@ -1000,16 +778,13 @@ main {
   cursor: pointer;
 }
 
-input[type='email'] { font-size: 2rem; }
-
-textarea {font-size: 1.5rem}
-
 /* FOOTER */
 
 footer {
+  display: block;
   margin: 0 auto;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
@@ -1017,13 +792,17 @@ footer {
   display: flex;
   justify-content: center;
   color: #fff6ce;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 7rem;
   font-family: 'Noto Serif', serif;
 }
 
 .footer-cta::after {
   display: none;
+}
+
+.footer-cta:hover {
+  color: turquoise;
 }
 
 .social-footer {
@@ -1042,4 +821,5 @@ footer {
 
 .social-footer a:hover {
   cursor: pointer;
+
 }
