@@ -1,97 +1,75 @@
 /* eslint-disable no-return-assign */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   NavLink,
 } from 'react-router-dom';
-import Home from './Home';
-import Reels from './Reels';
-import MoreContent from './MoreContent';
-import Contact from './Contact';
-import Nav from './Nav';
-import Soundcloud from './assets/soundcloud.png';
-import Instagram from './assets/instagram.png';
-import Twitter from './assets/twitter.png';
-
-import './styles.css';
+import Home from './Components/Home';
+import Reels from './Components/Reels';
+import MoreContent from './Components/MoreContent';
+import Contact from './Components/Contact';
+import Nav from './Components/Nav';
+import Footer from './Components/Footer';
+import GlobalStyles from './GlobalStyles';
 import ScrollToTop from './ScrollToTop';
+import backupData from './backupData.json';
 
 const App = () => {
-  const refs = {
-    heroRef: useRef(null),
-    reelRef: useRef(null),
+  const [siteData, setData] = useState([]);
+  const [isLoaded, setLoaded] = useState(false);
+
+  const fetchData = async () => {
+    fetch(
+      'https://mikeloganaudio-2f44f-default-rtdb.europe-west1.firebasedatabase.app/.json'
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data['1KhBayKFTeDi5E0wSauJpHClpL5Agky3qyK8lbLVJ7D8']);
+        setLoaded(true);
+      })
+      .catch((err) => {
+        setData(
+          backupData['1KhBayKFTeDi5E0wSauJpHClpL5Agky3qyK8lbLVJ7D8']
+        );
+        setLoaded(true);
+      });
   };
 
-  function handleDownBtn(e) {
-    console.log(e);
-    if (e.target.id === 'to-hero')
-      refs.heroRef.current.scrollIntoView({ behavior: 'smooth' });
-    if (e.target.id === 'to-reel') {
-      refs.reelRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
-    <div>
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
-        <div>
-          <Nav />
-          <ScrollToTop />
-          <Switch>
-            <Route path="/reels">
-              <Reels />
-            </Route>
-            <Route path="/more-content">
-              <MoreContent />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="">
-              <Home handleDownBtn={handleDownBtn} ref={refs} />
-            </Route>
-          </Switch>
-        </div>
-
-        <footer className="footer">
-          <ul className="social-footer">
-            <a
-              href="https://soundcloud.com/mikeloganaudio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Soundcloud} alt="soundcloud" />
-            </a>
-            <a
-              href="https://www.instagram.com/mikeloganaudio/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Instagram} alt="instagram" />
-            </a>
-            <a
-              href="https://www.twitter.com/mikeloganaudio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Twitter} alt="twitter" />
-            </a>
-          </ul>
-        </footer>
-        <NavLink
-          to="/contact"
-          className="footer-cta"
-          activeClassName="selected"
-        >
-          Get in touch!
-        </NavLink>
+    <>
+      <GlobalStyles />
+      <Router>
+        <Nav />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/reels">
+            {isLoaded ? <Reels data={siteData.Reels} /> : ''}
+          </Route>
+          <Route path="/more-content">
+            {isLoaded ? (
+              <MoreContent data={siteData.MoreContent} />
+            ) : (
+              ''
+            )}
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
       </Router>
-    </div>
+    </>
   );
 };
 

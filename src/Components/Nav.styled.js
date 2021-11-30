@@ -4,17 +4,17 @@ const StyledNavContainer = styled.nav`
   background-color: black;
   top: 0;
   width: 100vw;
-
+  position: relative;
   overflow-x: hidden;
 
   z-index: 99999;
   @media only screen and (min-width: 1200px) {
-    position: relative;
     width: 100%;
     margin-bottom: 2rem;
   }
 `;
 
+/* Holds navlinks and social media buttons */
 const StyledNavBar = styled.div`
   margin-top: 2rem;
   position: fixed;
@@ -37,7 +37,7 @@ const StyledNavBar = styled.div`
   }
 
   .navbar {
-    margin-top: 3rem;
+    margin-top: 6.75rem;
     display: flex;
     background-color: black;
     position: relative;
@@ -59,8 +59,25 @@ const StyledNavBar = styled.div`
     }
   }
 
-  .navlinks {
-    padding: 5rem 3rem;
+  .logo {
+    display: none;
+    justify-self: center;
+
+    flex-basis: fit-content;
+    @media only screen and (min-width: 1200px) {
+      display: block;
+    }
+
+    img {
+      max-height: 4rem;
+      width: auto;
+      margin-bottom: -0.25rem;
+    }
+  }
+`;
+
+const StyledNavLinks = styled.ul`
+  padding: 5rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,11 +87,12 @@ const StyledNavBar = styled.div`
     align-items: start;
 
     @media only screen and (min-width: 1200px) {
-      padding: 5rem 2rem;
+      padding: 5rem 2rem 1rem;
       display: block;
       min-height: 0;
       margin-left: 1.5rem;
       flex-grow: 1;
+      width: 50%;
       order: 0;
     }
 
@@ -100,66 +118,52 @@ const StyledNavBar = styled.div`
       width: 100%;
       height: 0.25rem;
       content: '';
-      background-color: #fff6ce;
+      background-color: var(--color-text);
       cursor: pointer;
     }
 
     a {
-      color: #fff6ce;
-      font-family: Roboto;
+      color: var(--color-text);
+      font-family: var(--font-primary);
       text-decoration: none;
       font-size: 1.75rem;
+      font-weight: 600;
       @media only screen and (min-width: 1200px) {
         font-size: 1.25rem;
       }
     }
   }
+`;
 
-  .logo {
-    display: none;
-    justify-self: center;
-
-    flex-basis: fit-content;
-    @media only screen and (min-width: 1200px) {
-      display: block;
-    }
-
-    img {
-      max-height: 4rem;
-      width: auto;
-      margin-bottom: -0.25rem;
-    }
+const StyledSocialButtons = styled.ul`
+  margin-right: 3rem;
+  display: flex;
+  justify-content: left;
+  flex-grow: none;
+  width: auto;
+  padding: 3rem;
+  @media only screen and (min-width: 1200px) {
+    margin-right: 1.5rem;
+    width: 50%;
+    justify-content: right;
+    flex-grow: 1;
+    padding: 2rem 2rem 1rem;
   }
 
-  .social-buttons {
-    margin-right: 3rem;
-    display: flex;
-    justify-content: left;
-    flex-grow: none;
-
-    padding: 3rem;
+  img {
+    padding: 0 2rem;
+    width: 2rem;
+    height: auto;
+    display: inline-block;
     @media only screen and (min-width: 1200px) {
-      margin-right: 1.5rem;
-      width: 33%;
-      justify-content: right;
-      flex-grow: 1;
-      padding: 2rem;
-    }
-
-    img {
       padding: 0 2rem;
-      width: 2rem;
+      width: 1.5rem;
       height: auto;
-      display: inline-block;
-      @media only screen and (min-width: 1200px) {
-        padding: 0 2rem;
-        width: 1.5rem;
-        height: auto;
-      }
     }
   }
 `;
 
+/* Holds additional UI elements introduced on mobile devices */
 const StyledMobileNav = styled.div`
   display: flex;
   position: fixed;
@@ -203,32 +207,35 @@ const StyledHamburger = styled.button`
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  font-size: 1.25rem;
   z-index: 99999;
-  padding: 3rem;
+  padding: 3em;
 
   .bar {
     display: block;
-    width: 2rem;
-    height: 0.25rem;
-    margin: 0.5rem auto;
+    width: 2em;
+    height: 0.25em;
+    margin: 0.5em auto;
     transition: all 0.3s ease-in-out;
-    background-color: #fff6ce;
+    background-color: var(--color-text);
   }
 
   &.active .bar:nth-child(2) {
     opacity: 0;
   }
   &.active .bar:nth-child(1) {
-    transform: translateY(0.75rem) rotate(45deg);
+    transform: translateY(0.75em) rotate(45deg);
   }
   &.active .bar:nth-child(3) {
-    transform: translateY(-0.75rem) rotate(-45deg);
+    transform: translateY(-0.75em) rotate(-45deg);
   }
 `;
 
 export {
   StyledNavContainer,
   StyledNavBar,
+  StyledSocialButtons,
   StyledMobileNav,
   StyledHamburger,
+  StyledNavLinks,
 };

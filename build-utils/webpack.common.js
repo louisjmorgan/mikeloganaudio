@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.js'),
@@ -11,7 +12,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|webp|jpeg|gif)$/i,
         type: 'asset/resource',
       },
       {
@@ -32,8 +33,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: '404.html',
-      template: path.resolve(__dirname, '..', 'src/404.html'),
+      template: path.resolve(__dirname, '..', './src/404.html'),
     }),
+    new FaviconsWebpackPlugin(
+      '/home/louis/Dev/MikeLoganAudio/mikeloganaudio/favicon.png'
+    ),
   ],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
