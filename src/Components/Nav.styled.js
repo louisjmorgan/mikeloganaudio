@@ -127,7 +127,7 @@ const StyledNavLinks = styled.ul`
       font-family: var(--font-primary);
       text-decoration: none;
       font-size: 1.75rem;
-      font-weight: 600;
+      font-weight: 500;
       @media only screen and (min-width: 1200px) {
         font-size: 1.25rem;
       }
