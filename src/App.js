@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
 } from 'react-router-dom';
 import Home from './Components/Home';
 import Reels from './Components/Reels';
