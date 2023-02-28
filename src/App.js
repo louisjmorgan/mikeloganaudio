@@ -22,21 +22,12 @@ const App = () => {
   const [isLoaded, setLoaded] = useState(false);
 
   const fetchData = async () => {
-    fetch(
-      'https://mikeloganaudio-2f44f-default-rtdb.europe-west1.firebasedatabase.app/.json'
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data['1KhBayKFTeDi5E0wSauJpHClpL5Agky3qyK8lbLVJ7D8']);
-        setLoaded(true);
-      })
-      .catch((err) => {
+    
         setData(
           backupData['1KhBayKFTeDi5E0wSauJpHClpL5Agky3qyK8lbLVJ7D8']
         );
         setLoaded(true);
-      });
-  };
+      };
 
   useEffect(() => {
     fetchData();
@@ -70,6 +61,6 @@ const App = () => {
       </Router>
     </>
   );
-};
 
+            }
 export default App;
