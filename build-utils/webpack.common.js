@@ -36,8 +36,8 @@ module.exports = {
       template: path.resolve(__dirname, '..', './src/404.html'),
     }),
     new FaviconsWebpackPlugin(
-      '/home/louis/Dev/MikeLoganAudio/mikeloganaudio/favicon.png'
-    ),
+      path.resolve(__dirname, '..', './favicon.png')
+   ),
   ],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
