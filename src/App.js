@@ -15,24 +15,8 @@ import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import GlobalStyles from './GlobalStyles';
 import ScrollToTop from './ScrollToTop';
-import backupData from './backupData.json';
 
 const App = () => {
-  const [siteData, setData] = useState([]);
-  const [isLoaded, setLoaded] = useState(false);
-
-  const fetchData = async () => {
-    
-        setData(
-          backupData['1KhBayKFTeDi5E0wSauJpHClpL5Agky3qyK8lbLVJ7D8']
-        );
-        setLoaded(true);
-      };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <>
       <GlobalStyles />
@@ -41,14 +25,10 @@ const App = () => {
         <ScrollToTop />
         <Switch>
           <Route path="/reels">
-            {isLoaded ? <Reels data={siteData.Reels} /> : ''}
+            <Reels />
           </Route>
           <Route path="/more-content">
-            {isLoaded ? (
-              <MoreContent data={siteData.MoreContent} />
-            ) : (
-              ''
-            )}
+            <MoreContent />
           </Route>
           <Route path="/contact">
             <Contact />
