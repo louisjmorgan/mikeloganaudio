@@ -31,7 +31,6 @@ const SplashReel = ({ reelRef, handleDownBtn }) => {
           src="https://player.vimeo.com/video/563007174?h=5ac6615590"
           width="640"
           height="360"
-          frameBorder="0"
           allowFullScreen
         />
       </div>
