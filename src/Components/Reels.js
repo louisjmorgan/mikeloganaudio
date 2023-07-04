@@ -8,7 +8,7 @@ const content = [
     id: 0,
     title: 'Film Sound Design Reel',
     url: 'https://player.vimeo.com/video/564597865?h=a24f152033',
-  },  
+  },
   {
     id: 1,
     title: 'Game Audio Demo Reel',
