@@ -6,13 +6,13 @@ import { StyledReelsContainer, StyledReel } from './Reels.styled';
 const content = [
   {
     id: 0,
-    title: 'Game Audio Sound Design Reel',
-    url: 'https://player.vimeo.com/video/563007174?h=5ac6615590',
-  },
+    title: 'Film Sound Design Reel',
+    url: 'https://player.vimeo.com/video/564597865?h=a24f152033',
+  },  
   {
     id: 1,
-    title: 'Game Audio Composition Reel',
-    url: 'https://player.vimeo.com/video/564597865?h=a24f152033',
+    title: 'Game Audio Demo Reel',
+    url: 'https://player.vimeo.com/video/810317211',
   },
 ];
 
