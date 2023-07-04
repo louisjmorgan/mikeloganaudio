@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,9 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Global Styles */
-
 ${
   '' /* font-family: 'Azeret Mono', monospace;
 font-family: 'Kalam', cursive;
@@ -58,7 +55,6 @@ font-family: 'Rajdhani', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 }
-
 *, :root {
   --color-text: #fff6ce;
   --color-link-hover: #b00b69;
@@ -69,50 +65,40 @@ font-family: 'Ubuntu', sans-serif; */
 i {
   font-style: italic;
 }
-
 button:active {
   transform: scale(0.90);
 }
-
 a:hover, .navlink:hover {
   cursor: pointer;
 }
-
 body {
   background-color: black ;
-
 }
-
 main {
   width: 100%;
   margin-top: 4rem;
   z-index: -2;
 }
-
 @media only screen and (min-width: 1200px) {
   main {
     margin-top: 2rem;
   }
 }
-
 @media only screen and (max-width: 1500px) {
   html {
     font-size: 87.5%;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 75%;
   }
 }
-
 @media only screen and (max-width: 800px) {
   html {
     font-size: 62.5%;
   }
 }
-
 @media only screen and (max-width: 450px) {
   html {
     font-size: 50%
