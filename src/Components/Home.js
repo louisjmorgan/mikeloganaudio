@@ -51,8 +51,8 @@ const Hero = ({ heroRef, handleDownBtn }) => {
           <StyledTextBox>
             I recently finished studying my MA in Sound Design For
             Screen at Bournemouth University, attaining a pass with
-            distinction. I'm now looking for entry-level positions as
-            a sound designer.
+            distinction. I&apos;m now looking for entry-level
+            positions as a sound designer.
           </StyledTextBox>
           <StyledTextBox>
             Feel free to check out my&nbsp;

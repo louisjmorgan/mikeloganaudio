@@ -14,7 +14,7 @@ const content = [
     title: 'Wwise Unity Audio Implementation:',
     url: 'https://player.vimeo.com/video/875316733',
   },
-  
+
   {
     description:
       'A redesign of a short gameplay clip from one of my favourite games; the idea here was to capture the oppressive atmoshpere, and sense of existential dread, of this masterclass in psychological horror from Frictional Games.',
@@ -23,7 +23,6 @@ const content = [
     title: 'Sound Redesign:',
     url: 'https://player.vimeo.com/video/623593114',
   },
-
 
   {
     description:
@@ -57,8 +56,6 @@ const content = [
     title: 'Using Morph VST and Device Randomizer to diversify SFX',
     url: 'https://player.vimeo.com/video/565002690?h=3b4ffe747c',
   },
-  
-  
 ];
 
 const ContentItem = ({ title, subtitle, description, url }) => {
