@@ -2,7 +2,6 @@ name: Deploy with gh-pages
 on: [push]
 jobs:
   Deploy-to-GH-Pages:
-    runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
