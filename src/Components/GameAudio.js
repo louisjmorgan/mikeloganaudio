@@ -8,21 +8,22 @@ import {
 const content = [
   {
     description:
+      'This was an entry for the SCREAM JAM game jam on itch.io. In the game, players must navigate a very dark house and avoid being hunted by an evil Corgi, using audio cues to lure away and escape from the creature. This project allowed me to get a handle on the basics of the Unity Wwise implementation, using reverb zones, occlusion, and RTPCs (such as an ominous rumble that fades in and out dependent on the distance away from the monster). ',
+    id: 1,
+    subtitle: ' Escape The Dark',
+    title: 'Wwise Unity Audio Implementation:',
+    url: 'https://player.vimeo.com/video/875316733',
+  },
+  
+  {
+    description:
       'A redesign of a short gameplay clip from one of my favourite games; the idea here was to capture the oppressive atmoshpere, and sense of existential dread, of this masterclass in psychological horror from Frictional Games.',
-    id: 0,
+    id: 1,
     subtitle: 'SOMA',
     title: 'Sound Redesign:',
     url: 'https://player.vimeo.com/video/623593114',
   },
 
-  {
-    description:
-      'This short game jam ',
-    id: 1,
-    subtitle: ' Escape The Dark',
-    title: 'Game Jam Entry:',
-    url: 'https://www.youtube.com/embed/iRIeV4wClZg',
-  },
 
   {
     description:
