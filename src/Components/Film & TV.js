@@ -8,40 +8,32 @@ import {
 const content = [
   {
     description:
-      'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
+      'A short sci-fi/western hybrid film I worked on in collaboration with a couple of VFX students at university. The film was shot with no location sound, so I was responsible for crafting the soundscape of the world from scratch. This included mixing howling praerie winds with heightened leather foley to bring out the western feel, as well as synthesizing a robotic language and a screaming spaceship engine.',
     id: 0,
-    subtitle: 'Warframe Excalibur Sword',
-    title: '30 Second Sound Design:',
-    url: 'https://player.vimeo.com/video/640508599?h=364346f483',
+    subtitle: 'Short Space Western Film with VFX',
+    title: 'Shadows of the Prairie',
+    url: 'https://player.vimeo.com/video/829845880',
   },
   {
     description:
-      'I’ve started a short series of rapid-fire 30 second sound design tutorials. Comment on my Instagram if you have any requests!',
+      'Written and directed by Sam Burnett, A Period Piece is a student-made TV show pilot which follows protagonist Eloise, during the week of her period each month. Eloise has to struggle through the monotony of day-to-day life and its trials and tribulations, all while suffering cramps, tiredness, mood swings, as well as some of the not-so-understanding men in her life! I was responsible for overseeing the audio for this project, from location sound recording to postproduction sound design to the final re-recording mix.',
     id: 1,
-    subtitle: 'RDR2 Springfield Rifle',
-    title: '30 Second Sound Design:',
-    url: 'https://player.vimeo.com/video/610762009?h=fdc9708708',
+    subtitle: 'Student Short Film - Comedy Drama',
+    title: 'A Period Piece:',
+    url: 'https://player.vimeo.com/video/859043892',
   },
   {
     description:
-      'This was part of a university collaboration project with RonaaFunkyGames, game design student at Bournemouth University. The level was created using Unity engine and the audio implemented using Audiokinetic Wwise. The soundtrack and SFX were created with Ableton Live.',
+      'I worked on this short film in my first term of University. The lack of dialogue and fragmented mental state of the main character allowed for a lot of storytelling through sound; using heavy effects to create a surreal and disconserting atmosphere, as well as building tension right up into the climax.',
     id: 2,
-    subtitle: 'A Demo Game Scene with Interactive Audio',
-    title: 'Zurlough:',
-    url: 'https://player.vimeo.com/video/566611864?h=ce866e9b0d',
-  },
-  {
-    description:
-      "A really cool technique; combining a squishy gore sound and a more transient impact in various unique ways using Zynaptiq's Morph plugin and Ableton's Device Randomizer.",
-    id: 3,
-    subtitle: '',
-    title: 'Using Morph VST and Device Randomizer to diversify SFX',
-    url: 'https://player.vimeo.com/video/565002690?h=3b4ffe747c',
+    subtitle: 'Student Short Film - Psychological Thriller',
+    title: 'Here With You:',
+    url: 'https://player.vimeo.com/video/802997585',
   },
   {
     description:
       'This was another collaboration with indie filmmakers WWYD Films, and an entry for the Raindance Film Festival “Sixty Spooky Seconds” contest. With no location audio I provided all sound effects and Foley to bring the images to life, along with being responsible for the overall audio mix.',
-    id: 4,
+    id: 3,
     subtitle: 'Possession',
     title: 'WWYD Films:',
     url: 'https://www.youtube.com/embed/iRIeV4wClZg',
@@ -49,7 +41,7 @@ const content = [
   {
     description:
       'I collaborated on this short film with indie film production group WWYD Films, to create a horror short in which I was responsible for audio post-production, sound design, and the overall audio mix. The Stalker released on 15th August 2021.',
-    id: 5,
+    id: 4,
     subtitle: 'The Stalker',
     title: 'WWYD Films:',
     url: 'https://www.youtube.com/embed/1VAGr_iFGMY',

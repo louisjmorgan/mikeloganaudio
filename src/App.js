@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Home from './Components/Home';
 import Reels from './Components/Reels';
+import Film from '/Components/Film & TV';
 import MoreContent from './Components/MoreContent';
 import Contact from './Components/Contact';
 import Nav from './Components/Nav';
@@ -26,6 +27,9 @@ const App = () => {
         <Switch>
           <Route path="/reels">
             <Reels />
+          </Route>
+          <Route path="/Film & TV">
+            <Film />
           </Route>
           <Route path="/more-content">
             <MoreContent />
