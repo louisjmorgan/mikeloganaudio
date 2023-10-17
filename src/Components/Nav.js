@@ -65,20 +65,20 @@ const NavLinksContainer = ({ closeMenu }) => {
       </li>
       <li>
         <NavLink
-          to="/reels"
-          activeClassName="selected"
-          onClick={closeMenu}
-        >
-          Reels
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/Film & TV"
+          to="/film-audio"
           activeClassName="selected"
           onClick={closeMenu}
         >
           Film & TV
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/game-audio"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Game Audio
         </NavLink>
       </li>
       <li>

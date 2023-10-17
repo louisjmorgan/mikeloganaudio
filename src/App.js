@@ -8,8 +8,8 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from './Components/Home';
-import Reels from './Components/Reels';
-import Film from '/Components/Film & TV';
+import Film from './Components/FilmAudio';
+import GameAudio from './Components/GameAudio';
 import MoreContent from './Components/MoreContent';
 import Contact from './Components/Contact';
 import Nav from './Components/Nav';
@@ -25,11 +25,11 @@ const App = () => {
         <Nav />
         <ScrollToTop />
         <Switch>
-          <Route path="/reels">
-            <Reels />
-          </Route>
-          <Route path="/Film & TV">
+          <Route path="/film-audio">
             <Film />
+          </Route>
+          <Route path="/game-audio">
+            <GameAudio />
           </Route>
           <Route path="/more-content">
             <MoreContent />
