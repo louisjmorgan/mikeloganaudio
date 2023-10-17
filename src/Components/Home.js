@@ -44,7 +44,7 @@ const Hero = ({ heroRef, handleDownBtn }) => {
     <StyledHero ref={heroRef}>
       <div className="hero-text-container">
         <StyledTextBox className="headline">
-          My name’s Mike, I’m a sound designer from Bournemouth, UK. I am passionate about all things audio, be it live-action, animation, games or VR!
+          My name’s Mike, I’m a sound designer from Bournemouth, UK. I am passionate about all things audio, be it live-action, radio & podcasts, or games!
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
