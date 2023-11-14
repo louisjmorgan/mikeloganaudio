@@ -6,9 +6,15 @@
     "node": true
   },
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react"],
   "rules": {
-    "prettier/prettier": ["error"],
+    "react/prop-types": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/no-extraneous-dependencies": 0,
     "react/jsx-filename-extension": 0
   }
