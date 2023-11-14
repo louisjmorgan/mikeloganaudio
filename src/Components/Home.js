@@ -56,8 +56,10 @@ const Hero = ({ heroRef, handleDownBtn }) => {
           </StyledTextBox>
           <StyledTextBox>
             Feel free to check out my&nbsp;
-            <Link to="/reels">reels</Link>
-            &nbsp;and&nbsp;
+            <Link to="/FilmAudio">Film & TV work</Link>
+            &nbsp;, &nbsp;
+            <Link to="/GameAudio">Games work</Link>
+            &nbsp;,and&nbsp;
             <Link to="/more-content">other content</Link>
             ,&nbsp;and don’t hesitate to&nbsp;
             <Link to="/contact">get in touch!</Link>
