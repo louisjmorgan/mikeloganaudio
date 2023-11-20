@@ -76,7 +76,7 @@ body {
 }
 main {
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 10rem;
   z-index: -2;
 }
 @media only screen and (min-width: 1200px) {

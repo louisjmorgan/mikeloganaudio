@@ -16,6 +16,7 @@ import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import GlobalStyles from './GlobalStyles';
 import ScrollToTop from './ScrollToTop';
+import FreeSfx from './Components/FreeSFX';
 
 const App = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
           </Route>
           <Route path="/more-content">
             <MoreContent />
+          </Route>
+          <Route path="/free-sfx">
+            <FreeSfx />
           </Route>
           <Route path="/contact">
             <Contact />

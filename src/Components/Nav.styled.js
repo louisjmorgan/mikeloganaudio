@@ -54,14 +54,15 @@ const StyledNavBar = styled.div`
     @media only screen and (min-width: 1200px) {
       margin-top: 0;
       flex-direction: row;
+      justify-content: space-between;
       align-items: baseline;
       margin-top: 1.25rem;
     }
   }
 
   .logo {
+    margin-left: 5rem;
     display: none;
-    justify-self: center;
 
     flex-basis: fit-content;
     @media only screen and (min-width: 1200px) {

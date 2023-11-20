@@ -92,6 +92,15 @@ const NavLinksContainer = ({ closeMenu }) => {
       </li>
       <li>
         <NavLink
+          to="/free-sfx"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Free SFX
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/contact"
           activeClassName="selected"
           onClick={closeMenu}
@@ -107,11 +116,12 @@ const NavBar = ({ isMenuOpen, closeMenu }) => {
   return (
     <StyledNavBar className={`${isMenuOpen ? 'active' : ''}`}>
       <div className="navbar">
-        <NavLinksContainer closeMenu={closeMenu} />
         <NavLink exact to="/" className="logo">
           <img src={MikeLoganAudio} alt="Mike Logan Audio Logo" />
         </NavLink>
-        <NavSocialButtons />
+        <NavLinksContainer closeMenu={closeMenu} />
+
+        {/* <NavSocialButtons /> */}
       </div>
     </StyledNavBar>
   );
