@@ -10,19 +10,12 @@ import SloMoImage from '../assets/slo-mo.png';
 const content = [
   {
     description:
-      'This is a free sfx library that I put together, intended to be used for designing cinematic slow motion action sequences. Inside you&apos;ll find folders with Sub drops, whooshes, low frequency elements and more! All sounds are original and ready to use in your projects. Below is a demo of the sound library, redesigning an iconic slow motion scene from The Matrix using only sounds from this pack!',
+      "This is a free sfx library that I put together, intended to be used for designing cinematic slow motion action sequences. Inside you'll find folders with Sub drops, whooshes, low frequency elements and more! All sounds are original and ready to use in your projects.                                  ",
     id: 0,
     subtitle: 'Slow‑Mo construction kit',
     title: 'Free Sound Library:',
     url: 'https://mikeloganaudio.s3.eu-west-2.amazonaws.com/mike-logan-slo-mo-construction-kit.zip',
     image: SloMoImage,
-  },
-  {
-    description: '',
-    id: 1,
-    subtitle: '',
-    title: '3',
-    url: 'https://player.vimeo.com/video/886549592',
   },
 ];
 
