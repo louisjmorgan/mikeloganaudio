@@ -9,7 +9,8 @@ import SloMoImage from '../assets/slo-mo.png';
 
 const content = [
   {
-    description: '',
+    description:
+      'This is a free sfx library that I put together, intended to be used for designing cinematic slow motion action sequences. Inside you&apos;ll find folders with Sub drops, whooshes, low frequency elements and more! All sounds are original and ready to use in your projects.',
     id: 0,
     subtitle: 'Slo‑mo construction kit',
     title: 'Free Sound Library:',
