@@ -13,7 +13,7 @@ const content = [
     id: 0,
     subtitle: 'Slo‑mo construction kit',
     title: 'Free Sound Library:',
-    url: '/mike-logan-slo-mo-construction-kit.zip',
+    url: 'https://mikeloganaudio.s3.eu-west-2.amazonaws.com/mike-logan-slo-mo-construction-kit.zip',
     image: SloMoImage,
   },
 ];
