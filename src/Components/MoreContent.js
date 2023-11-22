@@ -8,8 +8,16 @@ import {
 const content = [
   {
     description:
-      'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
+      'This is a quick "redesign" of the iconic slow motion bullet dodge scene from The Matrix, using only the SFX I created for my Slow-Motion Construction Kit, which can be downloaded from the Free SFX page at the top.',
     id: 0,
+    subtitle: 'The Matrix',
+    title: 'SlowMo Construction Kit Demo:',
+    url: 'https://player.vimeo.com/video/886549592?h=958d484cd8',
+  },
+  {
+    description:
+      'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
+    id: 1,
     subtitle: 'Warframe Excalibur Sword',
     title: '30 Second Sound Design:',
     url: 'https://player.vimeo.com/video/640508599?h=364346f483',
@@ -17,7 +25,7 @@ const content = [
   {
     description:
       'I’ve started a short series of rapid-fire 30 second sound design tutorials. Comment on my Instagram if you have any requests!',
-    id: 1,
+    id: 2,
     subtitle: 'RDR2 Springfield Rifle',
     title: '30 Second Sound Design:',
     url: 'https://player.vimeo.com/video/610762009?h=fdc9708708',
@@ -25,7 +33,7 @@ const content = [
   {
     description:
       'This was part of a university collaboration project with RonaaFunkyGames, game design student at Bournemouth University. The level was created using Unity engine and the audio implemented using Audiokinetic Wwise. The soundtrack and SFX were created with Ableton Live.',
-    id: 2,
+    id: 3,
     subtitle: 'A Demo Game Scene with Interactive Audio',
     title: 'Zurlough:',
     url: 'https://player.vimeo.com/video/566611864?h=ce866e9b0d',
@@ -33,7 +41,7 @@ const content = [
   {
     description:
       "A really cool technique; combining a squishy gore sound and a more transient impact in various unique ways using Zynaptiq's Morph plugin and Ableton's Device Randomizer.",
-    id: 3,
+    id: 4,
     subtitle: '',
     title: 'Using Morph VST and Device Randomizer to diversify SFX',
     url: 'https://player.vimeo.com/video/565002690?h=3b4ffe747c',
@@ -41,7 +49,7 @@ const content = [
   {
     description:
       'This was another collaboration with indie filmmakers WWYD Films, and an entry for the Raindance Film Festival “Sixty Spooky Seconds” contest. With no location audio I provided all sound effects and Foley to bring the images to life, along with being responsible for the overall audio mix.',
-    id: 4,
+    id: 5,
     subtitle: 'Possession',
     title: 'WWYD Films:',
     url: 'https://www.youtube.com/embed/iRIeV4wClZg',
@@ -49,7 +57,7 @@ const content = [
   {
     description:
       'I collaborated on this short film with indie film production group WWYD Films, to create a horror short in which I was responsible for audio post-production, sound design, and the overall audio mix. The Stalker released on 15th August 2021.',
-    id: 5,
+    id: 6,
     subtitle: 'The Stalker',
     title: 'WWYD Films:',
     url: 'https://www.youtube.com/embed/1VAGr_iFGMY',
