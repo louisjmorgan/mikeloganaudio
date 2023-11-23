@@ -19,7 +19,7 @@ const content = [
       'A short sci-fi/western hybrid film I worked on in collaboration with a couple of VFX students at university. The film was shot with no location sound, so I was responsible for crafting the soundscape of the world from scratch. This included mixing howling praerie winds with heightened leather foley to bring out the western feel, as well as synthesizing a robotic language and a screaming spaceship engine.',
     id: 1,
     subtitle: 'Short Space Western Film with VFX',
-    title: 'Shadows of the Prairie',
+    title: 'Shadows of the Prairie:',
     url: 'https://player.vimeo.com/video/829845880',
   },
   {

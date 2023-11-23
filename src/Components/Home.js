@@ -28,7 +28,7 @@ const SplashReel = ({ reelRef, handleDownBtn }) => {
       <div className="embed-container">
         <iframe
           title="vimeo-player"
-          src="https://player.vimeo.com/video/563007174?h=5ac6615590"
+          src="https://www.youtube.com/embed/gDdizqPuefQ?si=90BqmVLl3SNBV7Vw"
           width="640"
           height="360"
           allowFullScreen
