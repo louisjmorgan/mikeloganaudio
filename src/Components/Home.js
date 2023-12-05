@@ -55,10 +55,10 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             positions as a sound designer.
           </StyledTextBox>
           <StyledTextBox>
-            Feel free to check out my&nbsp;
-            <Link to="/film-audio">Film & TV work</Link>
+            Feel free to check out my &nbsp;
+            <Link to="/game-audio">games work</Link>
             &nbsp;, &nbsp;
-            <Link to="/game-audio">Games work</Link>
+            <Link to="/film-audio">film & TV work</Link>
             &nbsp;, and&nbsp;
             <Link to="/more-content">other content </Link>
             ,&nbsp;and don’t hesitate to&nbsp;
