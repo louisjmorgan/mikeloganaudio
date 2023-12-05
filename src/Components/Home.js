@@ -44,8 +44,9 @@ const Hero = ({ heroRef, handleDownBtn }) => {
       <div className="hero-text-container">
         <StyledTextBox className="headline">
           My name’s Mike, I’m a sound designer from Bournemouth, UK. I
-          am passionate about all things audio, be it live-action,
-          radio & podcasts, or games!
+          am passionate about all things audio, particularly the
+          creative use sound design to build a world, and tell a
+          story!
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
@@ -55,10 +56,10 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             positions as a sound designer.
           </StyledTextBox>
           <StyledTextBox>
-            Feel free to check out my&nbsp;
-            <Link to="/film-audio">Film & TV work</Link>
+            Feel free to check out my &nbsp;
+            <Link to="/game-audio">games work</Link>
             &nbsp;, &nbsp;
-            <Link to="/game-audio">Games work</Link>
+            <Link to="/film-audio">film & TV work</Link>
             &nbsp;, and&nbsp;
             <Link to="/more-content">other content </Link>
             ,&nbsp;and don’t hesitate to&nbsp;
