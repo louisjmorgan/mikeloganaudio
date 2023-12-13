@@ -8,6 +8,15 @@ import {
 const content = [
   {
     description:
+      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+    id: 0,
+    subtitle: 'Soul City',
+    title: 'Wwise Unreal Audio Implementation:',
+    url: 'https://player.vimeo.com/video/894179947',
+  },
+
+  {
+    description:
       "Here's a very quick sound design breakdown showing the methods behind a redesign I recently did of a clip from the game Warhaven. It`s very fast paced since I wanted to cover as much as possible in a relatively short video. Hope you enjoy, and find it interesting and/or helpful!",
     id: 1,
     subtitle: 'Warhaven - Gameplay/Cinematic Redesign',
