@@ -17,7 +17,7 @@ import Footer from './Components/Footer';
 import GlobalStyles from './GlobalStyles';
 import ScrollToTop from './ScrollToTop';
 import FreeSfx from './Components/FreeSFX';
-
+import './index.scss';
 const App = () => {
   return (
     <>

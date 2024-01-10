@@ -16,7 +16,6 @@ const StyledNavContainer = styled.nav`
 
 /* Holds navlinks and social media buttons */
 const StyledNavBar = styled.div`
-  margin-top: 2rem;
   position: fixed;
   width: 100%;
   max-height: 100vh;

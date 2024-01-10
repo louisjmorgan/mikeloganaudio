@@ -1,24 +1,7 @@
 import styled from 'styled-components';
 import Synth from '../assets/synth.webp';
 
-const StyledHomeContainer = styled.div`
-  display: grid;
-  grid-template-areas:
-    'introduction'
-    'splash-reel'
-    'recommendation';
-
-  grid-template-rows: minmax(90rem, 100vh) 75vw auto;
-  justify-items: start;
-
-  @media only screen and (min-width: 1200px) {
-    grid-template-areas:
-      'splash-reel'
-      'introduction'
-      'recommendation';
-    grid-template-rows: minmax(85vh, 50rem) minmax(60rem, 100vh) auto;
-  }
-`;
+const StyledHomeContainer = styled.div``;
 
 const StyledSplashReel = styled.section`
   grid-area: splash-reel;
@@ -28,7 +11,7 @@ const StyledSplashReel = styled.section`
 
   .embed-container {
     position: relative;
-    padding-bottom: 75vw;
+    padding-bottom: 85vw;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -50,7 +33,6 @@ const StyledSplashReel = styled.section`
     embed {
       position: absolute;
       top: 0;
-      padding-top: 12rem;
       width: 100%;
       height: 75%;
       @media only screen and (min-width: 1200px) {
@@ -92,11 +74,9 @@ const StyledSplashArrow = styled.button`
 `;
 
 const StyledHero = styled.section`
-  grid-area: introduction;
   display: block;
   background: rgb(0, 0, 0);
   width: 100%;
-  overflow: hidden;
 
   @media only screen and (min-width: 1200px) {
     margin-top: 0;
@@ -105,6 +85,7 @@ const StyledHero = styled.section`
   .hero-text-container {
     margin: 0 auto;
     width: 100%;
+    padding: 8rem 0;
     background-image: url(${Synth});
     background-size: cover;
     height: 100%;
@@ -169,6 +150,7 @@ const StyledHeroArrow = styled.button`
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  margin: 0 auto;
   z-index: 9999;
   height: 7rem;
   border: 5px solid var(--color-text);
@@ -238,6 +220,42 @@ const StyledRecommendation = styled.section`
       margin-right: 1rem;
       border-radius: 50%;
       width: 6rem;
+    }
+  }
+`;
+
+export const StyledVideoGrid = styled.section`
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  .video-grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, min-content);
+    justify-content: center;
+    @media only screen and (min-width: 800px) {
+      grid-template-columns: repeat(2, min-content);
+    }
+  }
+  .video-item {
+    position: relative;
+    width: 70vw;
+    height: 40vw;
+    @media only screen and (min-width: 600px) {
+      height: 30vw;
+      width: 50vw;
+    }
+    @media only screen and (min-width: 800px) {
+      height: 25vw;
+      width: 40vw;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
   }
 `;

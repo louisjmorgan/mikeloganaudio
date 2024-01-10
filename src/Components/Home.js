@@ -13,7 +13,31 @@ import {
   StyledHeroArrow,
   StyledSplashArrow,
   StyledRecommendation,
+  StyledVideoGrid,
 } from './Home.styled';
+
+const videos = [
+  {
+    description:
+      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+    url: 'https://player.vimeo.com/video/894179947',
+  },
+  {
+    description:
+      "Here's a very quick sound design breakdown showing the methods behind a redesign I recently did of a clip from the game Warhaven. It`s very fast paced since I wanted to cover as much as possible in a relatively short video. Hope you enjoy, and find it interesting and/or helpful!",
+    url: 'https://player.vimeo.com/video/891570110',
+  },
+  {
+    description:
+      'This is a quick "redesign" of the iconic slow motion bullet dodge scene from The Matrix, using only the SFX I created for my Slow-Motion Construction Kit, which can be downloaded from the Free SFX page at the top.',
+    url: 'https://player.vimeo.com/video/886549592?h=958d484cd8',
+  },
+  {
+    description:
+      'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
+    url: 'https://player.vimeo.com/video/640508599?h=364346f483',
+  },
+];
 
 const SplashReel = ({ reelRef, handleDownBtn }) => {
   return (
@@ -22,7 +46,7 @@ const SplashReel = ({ reelRef, handleDownBtn }) => {
         <img
           src={ArrowDown}
           alt="navigate to introduction"
-          id="to-hero"
+          id="to-video-grid"
         />
       </StyledSplashArrow>
       <div className="embed-container">
@@ -66,13 +90,6 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             <Link to="/contact">get in touch!</Link>
           </StyledTextBox>
         </div>
-        <StyledHeroArrow onClick={handleDownBtn} type="button">
-          <img
-            src={ArrowDown2}
-            alt="navigate down page"
-            id="to-reel"
-          />
-        </StyledHeroArrow>
       </div>
     </StyledHero>
   );
@@ -99,10 +116,25 @@ const Recommendation = () => {
   );
 };
 
+const VideoGrid = ({ videoGridRef, videos }) => {
+  return (
+    <StyledVideoGrid ref={videoGridRef}>
+      <div className="video-grid-container">
+        {videos.map(({ url }) => (
+          <div className="video-item">
+            <iframe title="" src={url} allowFullScreen />
+          </div>
+        ))}
+      </div>
+    </StyledVideoGrid>
+  );
+};
+
 const Home = () => {
   const refs = {
     heroRef: useRef(null),
     reelRef: useRef(null),
+    videoGridRef: useRef(null),
   };
 
   const handleDownBtn = (e) => {
@@ -111,14 +143,20 @@ const Home = () => {
     if (e.target.id === 'to-reel') {
       refs.reelRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+    if (e.target.id === 'to-video-grid') {
+      refs.videoGridRef.current.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
   };
   return (
-    <main>
+    <main className="bg-red">
       <StyledHomeContainer>
         <SplashReel
           reelRef={refs.reelRef}
           handleDownBtn={handleDownBtn}
         />
+        <VideoGrid videos={videos} videoGridRef={refs.videoGridRef} />
         <Hero heroRef={refs.heroRef} handleDownBtn={handleDownBtn} />
         <Recommendation />
       </StyledHomeContainer>

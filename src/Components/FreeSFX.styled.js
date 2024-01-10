@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledButton = styled.a`
   width: 10rem;
+  margin-top: 2rem;
   display: block;
   font-size: 1.75rem;
   padding: 0.75rem;
@@ -46,6 +47,7 @@ export const StyledSfxContentItem = styled.div`
     justify-content: center;
     
     .text-container {
+
       padding-left: 5rem;
       padding-right: 0rem;
     }
@@ -54,6 +56,7 @@ export const StyledSfxContentItem = styled.div`
       flex-direction: row-reverse;
       
       .text-container {
+    
         padding-right: 5rem;
         padding-left: 0rem;
       }
@@ -66,12 +69,11 @@ export const StyledSfxContentItem = styled.div`
   }
   .sfx-image {
     max-width: 20rem;
+    margin-bottom: 4rem;
   }
 
   
   .text-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
