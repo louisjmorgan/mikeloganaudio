@@ -8,6 +8,33 @@ import {
 const content = [
   {
     description:
+      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+    id: 0,
+    subtitle: 'Soul City',
+    title: 'Wwise Unreal Audio Implementation:',
+    url: 'https://player.vimeo.com/video/894179947',
+  },
+
+  {
+    description:
+      "Here's a very quick sound design breakdown showing the methods behind a redesign I recently did of a clip from the game Warhaven. It`s very fast paced since I wanted to cover as much as possible in a relatively short video. Hope you enjoy, and find it interesting and/or helpful!",
+    id: 1,
+    subtitle: 'Warhaven - Gameplay/Cinematic Redesign',
+    title: 'Sound Design Breakdown:',
+    url: 'https://player.vimeo.com/video/891570110',
+  },
+
+  {
+    description:
+      'Short Cosmic Horror experience created in Unity for a recent itch.io game jam. I was responsible for sound design and implementation using the Wwise integration and Unity scripts.',
+    id: 2,
+    subtitle: ' Cosmic Horror Game',
+    title: 'Wwise Unity Implementation:',
+    url: 'https://player.vimeo.com/video/902932531',
+  },
+
+  {
+    description:
       'This was an entry for the SCREAM JAM game jam on itch.io. In the game, players must navigate a very dark house and avoid being hunted by an evil Corgi, using audio cues to lure away and escape from the creature. This project allowed me to get a handle on the basics of the Unity Wwise implementation, using reverb zones, occlusion, and RTPCs (such as an ominous rumble that fades in and out dependent on the distance away from the monster). ',
     id: 1,
     subtitle: ' Escape The Dark',

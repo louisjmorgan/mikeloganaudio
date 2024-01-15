@@ -15,6 +15,29 @@ import {
   StyledRecommendation,
 } from './Home.styled';
 
+const videos = [
+  {
+    description:
+      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+    url: 'https://player.vimeo.com/video/894179947',
+  },
+  {
+    description:
+      "Here's a very quick sound design breakdown showing the methods behind a redesign I recently did of a clip from the game Warhaven. It`s very fast paced since I wanted to cover as much as possible in a relatively short video. Hope you enjoy, and find it interesting and/or helpful!",
+    url: 'https://player.vimeo.com/video/891570110',
+  },
+  {
+    description:
+      'This is a quick "redesign" of the iconic slow motion bullet dodge scene from The Matrix, using only the SFX I created for my Slow-Motion Construction Kit, which can be downloaded from the Free SFX page at the top.',
+    url: 'https://player.vimeo.com/video/886549592?h=958d484cd8',
+  },
+  {
+    description:
+      'Short Cosmic Horror experience created in Unity for a recent itch.io game jam. I was responsible for sound design and implementation using the Wwise integration and Unity scripts.',
+    url: 'https://player.vimeo.com/video/902932531',
+  },
+];
+
 const SplashReel = ({ reelRef, handleDownBtn }) => {
   return (
     <StyledSplashReel ref={reelRef}>
