@@ -34,8 +34,8 @@ const videos = [
   },
   {
     description:
-      'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
-    url: 'https://player.vimeo.com/video/640508599?h=364346f483',
+      'Short Cosmic Horror experience created in Unity for a recent itch.io game jam. I was responsible for sound design and implementation using the Wwise integration and Unity scripts.',
+    url: 'https://player.vimeo.com/video/902932531',
   },
 ];
 
