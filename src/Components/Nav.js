@@ -81,15 +81,7 @@ const NavLinksContainer = ({ closeMenu }) => {
           Film & TV
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/more-content"
-          activeClassName="selected"
-          onClick={closeMenu}
-        >
-          More Content
-        </NavLink>
-      </li>
+
       <li>
         <NavLink
           to="/free-sfx"

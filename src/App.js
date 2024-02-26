@@ -10,7 +10,6 @@ import {
 import Home from './Components/Home';
 import Film from './Components/FilmAudio';
 import GameAudio from './Components/GameAudio';
-import MoreContent from './Components/MoreContent';
 import Contact from './Components/Contact';
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
@@ -31,9 +30,6 @@ const App = () => {
           </Route>
           <Route path="/game-audio">
             <GameAudio />
-          </Route>
-          <Route path="/more-content">
-            <MoreContent />
           </Route>
           <Route path="/free-sfx">
             <FreeSfx />
