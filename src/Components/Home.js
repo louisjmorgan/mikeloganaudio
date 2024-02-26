@@ -67,26 +67,34 @@ const Hero = ({ heroRef, handleDownBtn }) => {
     <StyledHero ref={heroRef}>
       <div className="hero-text-container">
         <StyledTextBox className="headline">
-          My name’s Mike, I’m a sound designer from Bournemouth, UK. I
-          am passionate about all things audio, particularly the
-          creative use sound design to build a world, and tell a
-          story!
+          My name’s Mike, I’m a sound designer from Bournemouth, UK.
+          I'm a shameless sound design geek, with a perpetual desire
+          to capture and create weird and wonderful noises!
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
-            I recently finished studying my MA in Sound Design For
-            Screen at Bournemouth University, attaining a pass with
-            distinction. I&apos;m now looking for entry-level
-            positions as a sound designer.
+            I'm a recent graduate of Bournemouth University, where I
+            obtained an MA in Sound Design for Screen with
+            distinction, developing my skills in crafting immersive
+            and engaging soundtracks for various media formats. I
+            gained a particular love for the creative ways to tell
+            stories through sound, and wrote a thesis on the
+            differences in audiovisual storytelling, and diegesis, in
+            interactive and linear formats. I'm experienced with
+            Reaper, Ableton Live, Pro Tools, Wwise, Unreal and Unity.
+            I've also started to make free SFX libraries, which I'd
+            encourage any audio professionals to grab! I'm eager to
+            learn from and collaborate with other talented and
+            passionate individuals in the industry, and contribute to
+            the creation of memorable and meaningful audio
+            experiences.
           </StyledTextBox>
           <StyledTextBox>
-            Feel free to check out my &nbsp;
-            <Link to="/game-audio">games work</Link>
-            &nbsp;, &nbsp;
-            <Link to="/film-audio">film & TV work</Link>
-            &nbsp;, and&nbsp;
-            <Link to="/more-content">other content </Link>
-            ,&nbsp;and don’t hesitate to&nbsp;
+            Feel free to check out my&nbsp;
+            <Link to="/game-audio">games work,</Link>
+            &nbsp;
+            <Link to="/film-audio">film & TV work,</Link>
+            &nbsp;and don’t hesitate to&nbsp;
             <Link to="/contact">get in touch!</Link>
           </StyledTextBox>
         </div>

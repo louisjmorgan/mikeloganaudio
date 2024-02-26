@@ -8,7 +8,7 @@ import {
 const content = [
   {
     description:
-      'A quick reel of various projects I have worked on doing post-production sound design and location sound recording, as well as some redesigns for shorter form content.',
+      "A quick reel of some projects I've worked on doing post-production sound design, dialogue editing and mixing, as well as location sound recording.",
     id: 0,
     subtitle: '',
     title: 'Film Sound Design Portfolio',
