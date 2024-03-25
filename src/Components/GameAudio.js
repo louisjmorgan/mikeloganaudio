@@ -8,8 +8,16 @@ import {
 const content = [
   {
     description:
-      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+      'I wanted to put together a slightly more long-form and in-depth breakdown on a recent sound redesign project, so here it is!. Feel free to comment if you have any questions, comments or feedback!',
     id: 0,
+    subtitle: 'Need For Speed: Heat (Gameplay Sound Redesign)',
+    title: 'In-Depth Sound Design Breakdown:',
+    url: 'https://player.vimeo.com/video/927211582',
+  },
+  {
+    description:
+      'A video detailing a demo level I put together in Unreal Engine 5, using Wwise and Unreal blueprints to integrate my sound design into an interactive level. This includes reverb zones, a speed-dependent character movement SFX system, various attenuations and RTPCs, and much more!',
+    id: 1,
     subtitle: 'Soul City',
     title: 'Wwise Unreal Audio Implementation:',
     url: 'https://player.vimeo.com/video/894179947',
@@ -18,7 +26,7 @@ const content = [
   {
     description:
       "Here's a very quick sound design breakdown showing the methods behind a redesign I recently did of a clip from the game Warhaven. It`s very fast paced since I wanted to cover as much as possible in a relatively short video. Hope you enjoy, and find it interesting and/or helpful!",
-    id: 1,
+    id: 2,
     subtitle: 'Warhaven - Gameplay/Cinematic Redesign',
     title: 'Sound Design Breakdown:',
     url: 'https://player.vimeo.com/video/891570110',
@@ -27,7 +35,7 @@ const content = [
   {
     description:
       'Short Cosmic Horror experience created in Unity for a recent itch.io game jam. I was responsible for sound design and implementation using the Wwise integration and Unity scripts.',
-    id: 2,
+    id: 3,
     subtitle: ' Cosmic Horror Game',
     title: 'Wwise Unity Audio Implementation:',
     url: 'https://player.vimeo.com/video/902932531',
@@ -36,7 +44,7 @@ const content = [
   {
     description:
       'This was an entry for the SCREAM JAM game jam on itch.io. In the game, players must navigate a very dark house and avoid being hunted by an evil Corgi, using audio cues to lure away and escape from the creature. This project allowed me to get a handle on the basics of the Unity Wwise implementation, using reverb zones, occlusion, and RTPCs (such as an ominous rumble that fades in and out dependent on the distance away from the monster). ',
-    id: 3,
+    id: 4,
     subtitle: ' Escape The Dark',
     title: 'Wwise Unity Audio Implementation:',
     url: 'https://player.vimeo.com/video/875316733',
@@ -45,7 +53,7 @@ const content = [
   {
     description:
       'A redesign of a short gameplay clip from one of my favourite games; the idea here was to capture the oppressive atmoshpere, and sense of existential dread, of this masterclass in psychological horror from Frictional Games.',
-    id: 4,
+    id: 5,
     subtitle: 'SOMA',
     title: 'Sound Redesign:',
     url: 'https://player.vimeo.com/video/623593114',
@@ -54,7 +62,7 @@ const content = [
   {
     description:
       'The second installment in my quickfire sound design tutorial series focuses on using spectral morphing to texture Foley recordings and create something more mystical. Comment on my Instagram with any requests for future videos!',
-    id: 5,
+    id: 6,
     subtitle: 'Warframe Excalibur Sword',
     title: '30 Second Sound Design:',
     url: 'https://player.vimeo.com/video/640508599?h=364346f483',
@@ -62,7 +70,7 @@ const content = [
   {
     description:
       'I’ve started a short series of rapid-fire 30 second sound design tutorials. Comment on my Instagram if you have any requests!',
-    id: 6,
+    id: 7,
     subtitle: 'RDR2 Springfield Rifle',
     title: '30 Second Sound Design:',
     url: 'https://player.vimeo.com/video/610762009?h=fdc9708708',
@@ -70,7 +78,7 @@ const content = [
   {
     description:
       'This was part of a university collaboration project with RonaaFunkyGames, game design student at Bournemouth University. The level was created using Unity engine and the audio implemented using Audiokinetic Wwise. The soundtrack and SFX were created with Ableton Live.',
-    id: 7,
+    id: 8,
     subtitle: 'A Demo Game Scene with Interactive Audio',
     title: 'Zurlough:',
     url: 'https://player.vimeo.com/video/566611864?h=ce866e9b0d',
@@ -78,7 +86,7 @@ const content = [
   {
     description:
       "A really cool technique; combining a squishy gore sound and a more transient impact in various unique ways using Zynaptiq's Morph plugin and Ableton's Device Randomizer.",
-    id: 8,
+    id: 9,
     subtitle: '',
     title: 'Using Morph VST and Device Randomizer to diversify SFX',
     url: 'https://player.vimeo.com/video/565002690?h=3b4ffe747c',
