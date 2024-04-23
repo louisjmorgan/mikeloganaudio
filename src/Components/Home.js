@@ -7,6 +7,7 @@ import ArrowDown2 from '../assets/arrowdown2.png';
 import Wwyd from '../assets/wwyd.png';
 import picdj from '../assets/picdj.jpg';
 import picsetup from '../assets/picsetup.jpg';
+import mgrad from '../assets/mgrad.jpeg';
 import {
   StyledHomeContainer,
   StyledSplashReel,
@@ -128,6 +129,7 @@ const Hero = ({ heroRef, handleDownBtn }) => {
                 and meaningful audio experiences.
               </p>
             </div>
+            <img src={mgrad} alt="grad pic" class="mike-desk" />
           </StyledTextBox>
           <StyledTextBox>
             <img src={picdj} alt="dj image" />
@@ -137,24 +139,25 @@ const Hero = ({ heroRef, handleDownBtn }) => {
                 When I’m not designing sounds, you might find me out
                 running, watching films, producing music, playing the
                 saxophone or lighting up festival/club dancefloors at
-                DJ gigs!
+                DJ gigs! I also play video games from time to time…
               </p>
 
-              <p>I also play video games from time to time…</p>
-              <p>
-                <b>
-                  A few games I always find myself coming back to:
-                </b>
-              </p>
               <ul>
                 <li>
-                  <i>The Witcher 3</i>
+                  <p>
+                    <b>
+                      A few games I always find myself coming back to:
+                    </b>
+                  </p>
+                </li>
+                <li>
+                  <i>The Witcher 3: Wild Hunt</i>
                 </li>
                 <li>
                   <i>Old School Runescape</i>
                 </li>
                 <li>
-                  <i>Fallout New Vegas</i>
+                  <i>Fallout: New Vegas</i>
                 </li>
                 <li>
                   <i>Kingdom Come: Deliverance</i>
@@ -166,7 +169,10 @@ const Hero = ({ heroRef, handleDownBtn }) => {
                   <i>Destiny 2</i>
                 </li>
                 <li>
-                  <i> Need for Speed™ Heat Dragon Age™ Inquisition</i>
+                  <i> Need for Speed™ Heat</i>
+                </li>
+                <li>
+                  <i>Dragon Age™ Inquisition</i>
                 </li>
               </ul>
             </div>
@@ -176,15 +182,16 @@ const Hero = ({ heroRef, handleDownBtn }) => {
               Feel free to check out my
               <span>
                 {' '}
-                <Link to="/game-audio">games work,</Link>
+                <Link to="/game-audio">games work </Link>
               </span>
+              , watch some of my
               <span>
                 {' '}
                 <Link to="/film-audio">film & TV work,</Link>
               </span>
               <span>
                 {' '}
-                and don’t hesitate to&nbsp;
+                and of course, don’t hesitate to&nbsp;
                 <Link to="/contact">get in touch!</Link>
               </span>
             </div>

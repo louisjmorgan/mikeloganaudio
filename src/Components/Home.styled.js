@@ -154,6 +154,9 @@ const StyledTextBox = styled.p`
       max-height: 100%;
     }
   }
+  ul {
+    text-align: center;
+  }
 
   p {
     margin-bottom: 2rem;
@@ -262,15 +265,15 @@ export const StyledVideoGrid = styled.section`
   }
   .video-item {
     position: relative;
-    width: 70vh;
-    height: 40vh;
+    width: 85vh;
+    height: 50vh;
     @media only screen and (min-width: 600px) {
       height: 30vh;
-      width: 50vh;
+      width: 60vh;
     }
     @media only screen and (min-width: 800px) {
-      height: 25vh;
-      width: 40vh;
+      height: 30vh;
+      width: 50vh;
     }
     iframe {
       position: absolute;
