@@ -76,33 +76,15 @@ body {
   background-color: black ;
 }
 main {
-  width: 100%;
+  max-width: 100vw;
   margin-top: 10rem;
   z-index: -2;
+  overflow: hidden;
 }
+
 @media only screen and (min-width: 1200px) {
   main {
     margin-top: 2rem;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 75%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-@media only screen and (max-width: 450px) {
-  html {
-    font-size: 50%
   }
 }`;
 

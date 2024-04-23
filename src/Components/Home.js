@@ -69,86 +69,125 @@ const Hero = ({ heroRef, handleDownBtn }) => {
     <StyledHero ref={heroRef}>
       <div className="hero-text-container">
         <StyledTextBox className="headline">
-          My name’s Mike, a graduate sound designer from Bournemouth.
-          <br></br>
-          I'm a shameless audio geek who loves to craft weird and
-          <br></br>wonderful sounds, bring new universes to life and
-          tell great stories...
+          <div>
+            <p>
+              My name’s Mike, a graduate sound designer from
+              Bournemouth.
+            </p>
+            <p>
+              I'm a shameless audio geek who loves to craft weird and
+              wonderful sounds, bring new universes to life and tell
+              great stories...
+            </p>
+          </div>
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
-            As with many sound designers I started off producing music
-            from a young age. <br></br>My curiosity about how
-            soundtracks are made for some of my favourite games turned
-            into a love for interactive sound design.
-            <br></br>
-            <br></br>
-            <img src={picsetup} alt="setup pic" />
-            <br></br>
-            <br></br>I primarily work in Reaper but also use Ableton
-            Live for music and doodles, and have done postproduction
-            work on various short films in Pro Tools. I’ve got a solid
-            grounding in audio implementation using Wwise for smaller
-            indie games in Unity and Unreal, but I’m keen to start
-            contributing to exciting larger projects in the AAA
-            sphere.
-            <br></br>
+            <div class="textbox-text">
+              <p>
+                As with many sound designers I started off producing
+                music from a young age.
+              </p>
+              <p>
+                My curiosity about how soundtracks are made for some
+                of my favourite games turned into a love for
+                interactive sound design.
+              </p>
+              <p>
+                Ableton Live for music and doodles, and have done
+                postproduction work on various short films in Pro
+                Tools. I’ve got a solid grounding in audio
+                implementation using Wwise for smaller indie games in
+                Unity and Unreal, but I’m keen to start contributing
+                to exciting larger projects in the AAA sphere.
+              </p>
+            </div>
+            <img src={picsetup} alt="setup pic" class="mike-desk" />
           </StyledTextBox>
 
           <StyledTextBox>
-            I'm a recent graduate of Bournemouth University, where I
-            obtained an MA in Sound Design for Screen with
-            distinction, developing my skills in crafting immersive
-            and engaging soundtracks for various media formats. I
-            gained a particular love for the creative ways to tell
-            stories through sound, and wrote my thesis on diegesis
-            theory in games, and the new possibilities in audiovisual
-            storytelling in interactive, immersive, and linear
-            formats.
-            <br></br>
-            <br></br>
-            I've also started to make free&nbsp;
-            <Link to="/Free-SFX">SFX libraries</Link>
-            &nbsp;, which I'd encourage any audio professionals to
-            grab! I'm eager to learn from and collaborate with other
-            talented and passionate individuals in the industry, and
-            contribute to the creation of memorable and meaningful
-            audio experiences.
+            <div class="textbox-text">
+              <p>
+                I'm a recent graduate of Bournemouth University, where
+                I obtained an MA in Sound Design for Screen with
+                distinction, developing my skills in crafting
+                immersive and engaging soundtracks for various media
+                formats. I gained a particular love for the creative
+                ways to tell stories through sound, and wrote my
+                thesis on diegesis theory in games, and the new
+                possibilities in audiovisual storytelling in
+                interactive, immersive, and linear formats.
+              </p>
+              <p>
+                I've also started to make free&nbsp;
+                <Link to="/Free-SFX">SFX libraries</Link>
+                &nbsp;, which I'd encourage any audio professionals to
+                grab! I'm eager to learn from and collaborate with
+                other talented and passionate individuals in the
+                industry, and contribute to the creation of memorable
+                and meaningful audio experiences.
+              </p>
+            </div>
           </StyledTextBox>
           <StyledTextBox>
-            <br></br>
             <img src={picdj} alt="dj image" />
-            <br></br>
-            <br></br>
-            When I’m not designing sounds, you might find me out
-            running, watching films, producing music, playing the
-            saxophone or lighting up festival/club dancefloors at DJ
-            gigs! <br></br>I also play video games from time to time…
-            <br></br>
-            <br></br>
-            <b>A few games I always find myself coming back to:</b>
-            <br></br> <i>The Witcher 3</i>
-            <br></br>
-            <i>Old School Runescape</i>
-            <br></br>
-            <i>Fallout New Vegas</i>
-            <br></br>
-            <i>Kingdom Come: Deliverance</i> <br></br>
-            <i>The Outer Wilds</i> <br></br>
-            <i>Destiny 2</i>{' '}
-            <i>
-              {' '}
-              <br></br>Need for Speed™ Heat <br></br>Dragon Age™
-              Inquisition
-            </i>
+
+            <div class="textbox-text">
+              <p>
+                When I’m not designing sounds, you might find me out
+                running, watching films, producing music, playing the
+                saxophone or lighting up festival/club dancefloors at
+                DJ gigs!
+              </p>
+
+              <p>I also play video games from time to time…</p>
+              <p>
+                <b>
+                  A few games I always find myself coming back to:
+                </b>
+              </p>
+              <ul>
+                <li>
+                  <i>The Witcher 3</i>
+                </li>
+                <li>
+                  <i>Old School Runescape</i>
+                </li>
+                <li>
+                  <i>Fallout New Vegas</i>
+                </li>
+                <li>
+                  <i>Kingdom Come: Deliverance</i>
+                </li>
+                <li>
+                  <i>The Outer Wilds</i>
+                </li>
+                <li>
+                  <i>Destiny 2</i>
+                </li>
+                <li>
+                  <i> Need for Speed™ Heat Dragon Age™ Inquisition</i>
+                </li>
+              </ul>
+            </div>
           </StyledTextBox>
           <StyledTextBox>
-            Feel free to check out my&nbsp;
-            <Link to="/game-audio">games work,</Link>
-            &nbsp;
-            <Link to="/film-audio">film & TV work,</Link>
-            &nbsp;and don’t hesitate to&nbsp;
-            <Link to="/contact">get in touch!</Link>
+            <div class="textbox-text">
+              Feel free to check out my
+              <span>
+                {' '}
+                <Link to="/game-audio">games work,</Link>
+              </span>
+              <span>
+                {' '}
+                <Link to="/film-audio">film & TV work,</Link>
+              </span>
+              <span>
+                {' '}
+                and don’t hesitate to&nbsp;
+                <Link to="/contact">get in touch!</Link>
+              </span>
+            </div>
           </StyledTextBox>
         </div>
       </div>
@@ -211,7 +250,7 @@ const Home = () => {
     }
   };
   return (
-    <main className="bg-red">
+    <main>
       <StyledHomeContainer>
         <SplashReel
           reelRef={refs.reelRef}
