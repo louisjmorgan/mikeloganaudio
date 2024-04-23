@@ -265,15 +265,15 @@ export const StyledVideoGrid = styled.section`
   }
   .video-item {
     position: relative;
-    width: 85vh;
-    height: 50vh;
-    @media only screen and (min-width: 600px) {
-      height: 30vh;
-      width: 60vh;
+    width: 60vh;
+    height: 30vh;
+    @media only screen and (min-width: 500px) {
+      height: 20vh;
+      width: 40vh;
     }
     @media only screen and (min-width: 800px) {
-      height: 30vh;
-      width: 50vh;
+      height: 25vh;
+      width: 45vh;
     }
     iframe {
       position: absolute;

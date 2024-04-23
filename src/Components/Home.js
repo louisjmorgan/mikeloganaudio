@@ -72,13 +72,13 @@ const Hero = ({ heroRef, handleDownBtn }) => {
         <StyledTextBox className="headline">
           <div>
             <p>
-              My name’s Mike, a graduate sound designer from
+              Welcome! My name’s Mike, a graduate sound designer from
               Bournemouth.
             </p>
             <p>
               I'm a shameless audio geek who loves to craft weird and
-              wonderful sounds, bring new universes to life and tell
-              great stories...
+              wonderful sounds, bring new universes to life and of
+              course, tell great stories...
             </p>
           </div>
         </StyledTextBox>
@@ -86,17 +86,18 @@ const Hero = ({ heroRef, handleDownBtn }) => {
           <StyledTextBox>
             <div class="textbox-text">
               <p>
-                As with many sound designers I started off producing
-                music from a young age.
+                As with many sound designers I started my journey
+                through producing music from a young age.
               </p>
               <p>
-                My curiosity about how soundtracks are made for some
-                of my favourite games turned into a love for
+                My curiosity about how the soundtracks for some of my
+                favourite games are made turned into a love for
                 interactive sound design.
               </p>
               <p>
-                Ableton Live for music and doodles, and have done
-                postproduction work on various short films in Pro
+                I mostly work in Reaper, but also use Ableton Live for
+                music and occasional sound design doodles, and I've
+                done post-production on various short films in Pro
                 Tools. I’ve got a solid grounding in audio
                 implementation using Wwise for smaller indie games in
                 Unity and Unreal, but I’m keen to start contributing
