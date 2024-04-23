@@ -78,59 +78,58 @@ const StyledNavBar = styled.div`
 
 const StyledNavLinks = styled.ul`
   padding: 5rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 40rem;
-    height: 60%;
-    width: auto;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 40rem;
+  height: 60%;
+  width: auto;
+  align-items: start;
 
+  @media only screen and (min-width: 1200px) {
+    padding: 5rem 2rem 1rem;
+    display: block;
+    min-height: 0;
+    margin-left: 1.5rem;
+    flex-grow: 1;
+    width: 50%;
+    order: 0;
+  }
+
+  li {
+    padding: 0 1.5rem;
+    display: inline-block;
+  }
+
+  li :not(.selected):after {
+    margin-top: 0.75rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 0px;
+    transition: 0.3s;
+  }
+
+  li :not(.selected):hover:after,
+  .selected:after {
+    position: relative;
+    display: block;
+    margin-top: 0.75rem;
+    width: 100%;
+    height: 0.25rem;
+    content: '';
+    background-color: var(--color-text);
+    cursor: pointer;
+  }
+
+  a {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
     @media only screen and (min-width: 1200px) {
-      padding: 5rem 2rem 1rem;
-      display: block;
-      min-height: 0;
-      margin-left: 1.5rem;
-      flex-grow: 1;
-      width: 50%;
-      order: 0;
-    }
-
-    li {
-      padding: 0 1.5rem;
-      display: inline-block;
-    }
-
-    li :not(.selected):after {
-      margin-top: 0.75rem;
-      content: '';
-      display: block;
-      height: 0.25rem;
-      width: 0px;
-      transition: 0.3s;
-    }
-
-    li :not(.selected):hover:after,
-    .selected:after {
-      position: relative;
-      display: block;
-      margin-top: 0.75rem;
-      width: 100%;
-      height: 0.25rem;
-      content: '';
-      background-color: var(--color-text);
-      cursor: pointer;
-    }
-
-    a {
-      color: var(--color-text);
-      font-family: var(--font-primary);
-      text-decoration: none;
-      font-size: 1.75rem;
-      font-weight: 400;
-      @media only screen and (min-width: 1200px) {
-        font-size: 1.25rem;
-      }
+      font-size: 1.25rem;
     }
   }
 `;
