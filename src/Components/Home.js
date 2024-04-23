@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import ArrowDown from '../assets/arrowdown.png';
 import ArrowDown2 from '../assets/arrowdown2.png';
 import Wwyd from '../assets/wwyd.png';
+import picdj from '../assets/picdj.png';
+import picsetup from '../assets/picsetup.png';
 import {
   StyledHomeContainer,
   StyledSplashReel,
@@ -73,21 +75,69 @@ const Hero = ({ heroRef, handleDownBtn }) => {
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
+            As with many sound designers, I started off producing
+            music from a very young age, before my curiosity as to how
+            soundtracks are made for some of my favourite games turned
+            into an infatuation for sound design, and the clever ways
+            that sound effects can be used in interactive games to
+            provide useful player feedback while simultaneously
+            enhancing a narrative.
+            <br></br>
+            <br></br>I primarily work in Reaper, but I also frequently
+            use Ableton Live, and have done postproduction work on
+            various short films in Pro Tools. I’ve got a solid base of
+            experience in audio implementation using Wwise on smaller
+            indie projects in Unity and Unreal, but I’m keen to start
+            contributing to exciting larger projects in the AAA
+            sphere.
+          </StyledTextBox>
+          <img src={picsetup} alt="setup pic" />
+          <StyledTextBox>
             I'm a recent graduate of Bournemouth University, where I
             obtained an MA in Sound Design for Screen with
             distinction, developing my skills in crafting immersive
             and engaging soundtracks for various media formats. I
             gained a particular love for the creative ways to tell
-            stories through sound, and wrote a thesis on the
-            differences in audiovisual storytelling, and diegesis, in
-            interactive and linear formats. I'm experienced with
-            Reaper, Ableton Live, Pro Tools, Wwise, Unreal and Unity.
+            stories through sound, and wrote my thesis on diegesis
+            theory in games, and the new possibilities in audiovisual
+            storytelling in interactive, immersive, and linear
+            formats.
+            <br></br>
+            <br></br>
             I've also started to make free SFX libraries, which I'd
             encourage any audio professionals to grab! I'm eager to
             learn from and collaborate with other talented and
             passionate individuals in the industry, and contribute to
             the creation of memorable and meaningful audio
             experiences.
+          </StyledTextBox>
+          <img src={picdj} alt="dj image" />
+          <StyledTextBox>
+            When I’m not designing sounds for weird and wonderful
+            virtual sonic worlds, you might find me producing music or
+            playing the saxophone, out running, and competing in
+            athletics, or out playing DJ gigs, lighting up festival of
+            club dancefloors with a wacky blend of mashups from disco
+            through to drum and bass, reggae, techno, and any musical
+            style in between! I suppose I also play video games from
+            time to time…
+            <br></br>
+            <br></br>
+            <b>A few games I always find myself coming back to:</b>
+            <br></br> <i>The Witcher 3</i>
+            <br></br>
+            <i>Old School Runescape</i>
+            <br></br>
+            <i>Fallout New Vegas</i>
+            <br></br>
+            <i>Kingdom Come: Deliverance</i> <br></br>
+            <i>The Outer Wilds</i> <br></br>
+            <i>Destiny 2</i>{' '}
+            <i>
+              {' '}
+              <br></br>Need for Speed™ Heat <br></br>Dragon Age™
+              Inquisition
+            </i>
           </StyledTextBox>
           <StyledTextBox>
             Feel free to check out my&nbsp;
