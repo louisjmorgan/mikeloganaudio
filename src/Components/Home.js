@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import ArrowDown from '../assets/arrowdown.png';
 import ArrowDown2 from '../assets/arrowdown2.png';
 import Wwyd from '../assets/wwyd.png';
-import picdj from '../assets/picdj.png';
-import picsetup from '../assets/picsetup.png';
+import picdj from '../assets/picdj.jpg';
+import picsetup from '../assets/picsetup.jpg';
 import {
   StyledHomeContainer,
   StyledSplashReel,
@@ -69,29 +69,32 @@ const Hero = ({ heroRef, handleDownBtn }) => {
     <StyledHero ref={heroRef}>
       <div className="hero-text-container">
         <StyledTextBox className="headline">
-          My name’s Mike, I’m a sound designer from Bournemouth, UK.
-          I'm a shameless sound design geek, with a perpetual desire
-          to capture and create weird and wonderful noises!
+          My name’s Mike, a graduate sound designer from Bournemouth.
+          <br></br>
+          I'm a shameless audio geek who loves to craft weird and
+          <br></br>wonderful sounds, bring new universes to life and
+          tell great stories...
         </StyledTextBox>
         <div className="introduction-info">
           <StyledTextBox>
-            As with many sound designers, I started off producing
-            music from a very young age, before my curiosity as to how
+            As with many sound designers I started off producing music
+            from a young age. <br></br>My curiosity about how
             soundtracks are made for some of my favourite games turned
-            into an infatuation for sound design, and the clever ways
-            that sound effects can be used in interactive games to
-            provide useful player feedback while simultaneously
-            enhancing a narrative.
+            into a love for interactive sound design.
             <br></br>
-            <br></br>I primarily work in Reaper, but I also frequently
-            use Ableton Live, and have done postproduction work on
-            various short films in Pro Tools. I’ve got a solid base of
-            experience in audio implementation using Wwise on smaller
-            indie projects in Unity and Unreal, but I’m keen to start
+            <br></br>
+            <img src={picsetup} alt="setup pic" />
+            <br></br>
+            <br></br>I primarily work in Reaper but also use Ableton
+            Live for music and doodles, and have done postproduction
+            work on various short films in Pro Tools. I’ve got a solid
+            grounding in audio implementation using Wwise for smaller
+            indie games in Unity and Unreal, but I’m keen to start
             contributing to exciting larger projects in the AAA
             sphere.
+            <br></br>
           </StyledTextBox>
-          <img src={picsetup} alt="setup pic" />
+
           <StyledTextBox>
             I'm a recent graduate of Bournemouth University, where I
             obtained an MA in Sound Design for Screen with
@@ -104,23 +107,23 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             formats.
             <br></br>
             <br></br>
-            I've also started to make free SFX libraries, which I'd
-            encourage any audio professionals to grab! I'm eager to
-            learn from and collaborate with other talented and
-            passionate individuals in the industry, and contribute to
-            the creation of memorable and meaningful audio
-            experiences.
+            I've also started to make free&nbsp;
+            <Link to="/Free-SFX">SFX libraries</Link>
+            &nbsp;, which I'd encourage any audio professionals to
+            grab! I'm eager to learn from and collaborate with other
+            talented and passionate individuals in the industry, and
+            contribute to the creation of memorable and meaningful
+            audio experiences.
           </StyledTextBox>
-          <img src={picdj} alt="dj image" />
           <StyledTextBox>
-            When I’m not designing sounds for weird and wonderful
-            virtual sonic worlds, you might find me producing music or
-            playing the saxophone, out running, and competing in
-            athletics, or out playing DJ gigs, lighting up festival of
-            club dancefloors with a wacky blend of mashups from disco
-            through to drum and bass, reggae, techno, and any musical
-            style in between! I suppose I also play video games from
-            time to time…
+            <br></br>
+            <img src={picdj} alt="dj image" />
+            <br></br>
+            <br></br>
+            When I’m not designing sounds, you might find me out
+            running, watching films, producing music, playing the
+            saxophone or lighting up festival/club dancefloors at DJ
+            gigs! <br></br>I also play video games from time to time…
             <br></br>
             <br></br>
             <b>A few games I always find myself coming back to:</b>
