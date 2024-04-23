@@ -86,22 +86,26 @@ const Hero = ({ heroRef, handleDownBtn }) => {
           <StyledTextBox>
             <div class="textbox-text">
               <p>
-                As with many sound designers I started my journey
-                through producing music from a young age.
+                As with many sound designers, I started my journey
+                through producing music from a young age. This sparked
+                an early interest in playing around with synths, and
+                processing instruments in an attempt to create unique
+                soundscapes.
               </p>
               <p>
                 My curiosity about how the soundtracks for some of my
-                favourite games are made turned into a love for
-                interactive sound design.
+                favourite games were made quickly turned into a
+                passion for interactive sound design.
               </p>
               <p>
                 I mostly work in Reaper, but also use Ableton Live for
-                music and occasional sound design doodles, and I've
-                done post-production on various short films in Pro
-                Tools. I’ve got a solid grounding in audio
-                implementation using Wwise for smaller indie games in
-                Unity and Unreal, but I’m keen to start contributing
-                to exciting larger projects in the AAA sphere.
+                music (and the occasional sound design doodling
+                session), and I've done post-production for various
+                short films on Pro Tools. I’ve got a solid grounding
+                in audio implementation with Wwise for smaller indie
+                game projects in Unity and Unreal, but I’m keen to
+                start contributing to exciting larger projects in the
+                AAA sphere.
               </p>
             </div>
             <img src={picsetup} alt="setup pic" class="mike-desk" />
@@ -183,9 +187,8 @@ const Hero = ({ heroRef, handleDownBtn }) => {
               Feel free to check out my
               <span>
                 {' '}
-                <Link to="/game-audio">games work </Link>
+                <Link to="/game-audio">games work, </Link>
               </span>
-              , watch some of my
               <span>
                 {' '}
                 <Link to="/film-audio">film & TV work,</Link>

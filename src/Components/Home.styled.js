@@ -105,7 +105,7 @@ const StyledHero = styled.section`
 
 const StyledTextBox = styled.p`
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.75;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ const StyledTextBox = styled.p`
   font-family: var(--font-primary);
   margin: 1rem 2rem;
   color: var(--color-text);
-  width: 100%;
+  width: 75%;
   max-width: 90%;
   background-color: #001;
   padding: 2.5rem;
@@ -143,14 +143,14 @@ const StyledTextBox = styled.p`
 
   img {
     max-width: 100%;
-    width: 100%;
-    border-radius: 0.6rem;
+    width: 80%;
+    border-radius: 2rem;
 
     display: inline;
     max-height: 20rem;
     object-fit: cover;
     @media only screen and (min-width: 1200px) {
-      width: 30rem;
+      width: 25rem;
       max-height: 100%;
     }
   }
@@ -159,7 +159,7 @@ const StyledTextBox = styled.p`
   }
 
   p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   p:last-child {
@@ -272,8 +272,8 @@ export const StyledVideoGrid = styled.section`
       width: 40vh;
     }
     @media only screen and (min-width: 800px) {
-      height: 25vh;
-      width: 45vh;
+      height: 40vh;
+      width: 60vh;
     }
     iframe {
       position: absolute;
