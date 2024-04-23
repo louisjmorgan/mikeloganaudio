@@ -1,4 +1,4 @@
-<!doctype html><html><head><style>@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,300;1,100;1,300&family=Kalam:wght@300&family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Lora&family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');</style><title>Mike Logan Audio</title><meta name="viewport" content="width=device-width,initial-scale=1"><script>// Single Page Apps for GitHub Pages
+<!doctype html><html><head><style>@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,300;1,100;1,300&family=Kalam:wght@300&family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Lora&family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');</style><title>Mike Logan Audio</title><meta name="viewport" content="width=device-width,initial-scale=1"/><script>// Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
       // This script checks to see if a redirect is present in the query string,
@@ -8,13 +8,19 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))</script><link rel="icon" href="favicon.png"><script defer="defer" src="bundle.js"></script></head><body><div id="app"></div></body></html>
+      })(window.location);</script><link rel="icon" href="favicon.png"><script defer="defer" src="bundle.js"></script></head><body><div id="app"></div></body></html>
