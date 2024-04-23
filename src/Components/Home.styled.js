@@ -19,29 +19,27 @@ const StyledSplashReel = styled.section`
     height: 0;
     z-index: 1;
 
-      @media only screen and (min-width: 1200px) {
-        padding-bottom: 85vh;
-      }
-        @media only screen and (max-height: 900px) {
-          padding-bottom: 50rem;
-        }
-      } 
+    @media only screen and (min-width: 1200px) {
+      padding-bottom: 85vh;
     }
+    @media only screen and (max-height: 900px) {
+      padding-bottom: 50rem;
+    }
+  }
 
-    iframe,
-    object,
-    embed {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 75%;
-      @media only screen and (min-width: 1200px) {
-        padding-top: 0;
-        top: 3%;
-        left: 2%;
-        width: 90%;
-        height: 80%;
-      }
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    @media only screen and (min-width: 1200px) {
+      padding-top: 0;
+      top: 3%;
+      left: 2%;
+      width: 90%;
+      height: 80%;
     }
   }
 `;
@@ -87,7 +85,7 @@ const StyledHero = styled.section`
     width: 100%;
     padding: 8rem 0;
     background-image: url(${Synth});
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -105,29 +103,33 @@ const StyledHero = styled.section`
   }
 `;
 
-const StyledTextBox = styled.span`
-  text-align: center;
+const StyledTextBox = styled.p`
+  text-align: left;
   font-size: 2rem;
-  line-height: 1.5;
-  display: block;
+  line-height: 1.75;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   font-weight: 400;
   font-family: var(--font-primary);
-  margin: 1rem 0;
+  margin: 1rem 2rem;
   color: var(--color-text);
-  width: 75ch;
-  max-width: 75%;
+  width: 100%;
+  max-width: 90%;
   background-color: #001;
   padding: 2.5rem;
   border-radius: 0.6rem;
 
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   &.headline {
     background-color: var(--color-text);
     color: #000;
-    font-size: 2.5rem;
+    text-align: center;
     font-weight: 700;
-    line-height: 1.25;
-    width: 65ch;
-
+    font-size: 2.5rem;
   }
 
   a {
@@ -138,6 +140,30 @@ const StyledTextBox = styled.span`
       color: var(--color-link-hover);
     }
   }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0.6rem;
+
+    display: inline;
+    max-height: 20rem;
+    object-fit: cover;
+    @media only screen and (min-width: 1200px) {
+      width: 30rem;
+      max-height: 100%;
+    }
+  }
+  ul {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 `;
 
@@ -239,15 +265,15 @@ export const StyledVideoGrid = styled.section`
   }
   .video-item {
     position: relative;
-    width: 70vw;
-    height: 40vw;
+    width: 85vh;
+    height: 50vh;
     @media only screen and (min-width: 600px) {
-      height: 30vw;
-      width: 50vw;
+      height: 30vh;
+      width: 60vh;
     }
     @media only screen and (min-width: 800px) {
-      height: 25vw;
-      width: 40vw;
+      height: 30vh;
+      width: 50vh;
     }
     iframe {
       position: absolute;
