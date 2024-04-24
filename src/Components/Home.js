@@ -7,7 +7,7 @@ import ArrowDown2 from '../assets/arrowdown2.png';
 import Wwyd from '../assets/wwyd.png';
 import picdj from '../assets/picdj.jpg';
 import picsetup from '../assets/picsetup.jpg';
-import mgrad from '../assets/mgrad.jpeg';
+import mgrad from '../assets/mgrad.png';
 import {
   StyledHomeContainer,
   StyledSplashReel,
@@ -87,21 +87,21 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             <div class="textbox-text">
               <p>
                 As with many sound designers, I started my journey
-                through producing music from a young age. This sparked
-                an early interest in playing around with synths, and
+                producing music from a young age. This sparked an
+                early interest in playing around with synths, and
                 processing instruments in an attempt to create unique
                 soundscapes.
               </p>
               <p>
-                My curiosity about how the soundtracks for some of my
-                favourite games were made quickly turned into a
+                My curiosity about how soundtracks for some of my
+                favourite games were made, quickly turned into a
                 passion for interactive sound design.
               </p>
               <p>
                 I mostly work in Reaper, but also use Ableton Live for
                 music (and the occasional sound design doodling
                 session), and I've done post-production for various
-                short films on Pro Tools. I’ve got a solid grounding
+                short films in Pro Tools. I’ve got a solid grounding
                 in audio implementation with Wwise for smaller indie
                 game projects in Unity and Unreal, but I’m keen to
                 start contributing to exciting larger projects in the
@@ -115,20 +115,20 @@ const Hero = ({ heroRef, handleDownBtn }) => {
             <div class="textbox-text">
               <p>
                 I'm a recent graduate of Bournemouth University, where
-                I obtained an MA in Sound Design for Screen with
-                distinction, developing my skills in crafting
-                immersive and engaging soundtracks for various media
-                formats. I gained a particular love for the creative
-                ways to tell stories through sound, and wrote my
-                thesis on diegesis theory in games, and the new
-                possibilities in audiovisual storytelling in
-                interactive, immersive, and linear formats.
+                I obtained an MA with distinction in Sound Design for
+                Screen, developing my skills in crafting immersive and
+                engaging soundtracks for various media formats. I
+                gained a particular fascination for the creative ways
+                to tell stories through sound; I wrote my thesis on
+                diegesis theory in games, and new audiovisual
+                storytelling possibilities in interactive, immersive,
+                and linear formats.
               </p>
               <p>
                 I've also started to make free&nbsp;
                 <Link to="/Free-SFX">SFX libraries</Link>
                 &nbsp;, which I'd encourage any audio professionals to
-                grab! I'm eager to learn from and collaborate with
+                grab! I'm eager to learn from, and collaborate with,
                 other talented and passionate individuals in the
                 industry, and contribute to the creation of memorable
                 and meaningful audio experiences.
