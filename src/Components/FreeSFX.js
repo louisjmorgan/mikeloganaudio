@@ -6,6 +6,7 @@ import {
 } from './MoreContent.styled';
 import { StyledButton, StyledSfxContentItem } from './FreeSFX.styled';
 import SloMoImage from '../assets/slo-mo.png';
+import SciFiRisersImage from '../assets/emfscifirisers.png';
 
 const content = [
   {
@@ -14,8 +15,18 @@ const content = [
     id: 0,
     subtitle: 'Slow‑Mo construction kit',
     title: 'Free Sound Library:',
-    url: 'https://mikeloganaudio.s3.eu-west-2.amazonaws.com/mike-logan-slo-mo-construction-kit.zip',
+    url: 'https://mikeloganaudio.gumroad.com/l/dnjvh',
     image: SloMoImage,
+  },
+
+  {
+    description:
+      '30 free sounds: designed from electromagnetic field recordings, wavetable synthesis, and recorded whooshes! Processed with a range of effects, modulation, filtering, feedback, and resampling. Intended for use as source material, weapon charges, UI sounds, robots, force fields... go crazy!                                 ',
+    id: 1,
+    subtitle: 'Designed EMF Sci-Fi Risers',
+    title: 'Free Sound Library:',
+    url: 'https://mikeloganaudio.gumroad.com/l/freescifirisers',
+    image: SciFiRisersImage,
   },
 ];
 
