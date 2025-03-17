@@ -18,6 +18,7 @@ import {
   StyledRecommendation,
   StyledVideoGrid,
 } from './Home.styled';
+import { Footer } from './Nav';
 
 const videos = [
   {
@@ -72,7 +73,7 @@ const Hero = ({ heroRef, handleDownBtn }) => {
         <StyledTextBox className="headline">
           <div>
             <p>
-              Welcome! My name’s Mike, a graduate sound designer from
+              Welcome! My name's Mike, a graduate sound designer from
               Bournemouth.
             </p>
             <p>
@@ -101,9 +102,9 @@ const Hero = ({ heroRef, handleDownBtn }) => {
                 I mostly work in Reaper, but also use Ableton Live for
                 music (and the occasional sound design doodling
                 session), and I've done post-production for various
-                short films in Pro Tools. I’ve got a solid grounding
+                short films in Pro Tools. I've got a solid grounding
                 in audio implementation with Wwise for smaller indie
-                game projects in Unity and Unreal, but I’m keen to
+                game projects in Unity and Unreal, but I'm keen to
                 start contributing to exciting larger projects in the
                 AAA sphere.
               </p>
@@ -141,7 +142,7 @@ const Hero = ({ heroRef, handleDownBtn }) => {
 
             <div class="textbox-text">
               <p>
-                When I’m not designing sounds, you might find me out
+                When I'm not designing sounds, you might find me out
                 running, watching films, producing music, playing the
                 saxophone or lighting up festival/club dancefloors at
                 DJ gigs! I also play video games from time to time…
@@ -195,7 +196,7 @@ const Hero = ({ heroRef, handleDownBtn }) => {
               </span>
               <span>
                 {' '}
-                and of course, don’t hesitate to&nbsp;
+                and of course, don't hesitate to&nbsp;
                 <Link to="/contact">get in touch!</Link>
               </span>
             </div>
@@ -210,14 +211,13 @@ const Recommendation = () => {
   return (
     <StyledRecommendation>
       <p className="recommendation-text">
-        It&apos;s been an absolute dream working with Mike. His
-        ability to grasp projects quickly coupled with his flexibility
-        and creative vision make him an invaluable asset to the team.
-        Mike has a rare, genuine passion for his craft, with a
-        tenacious and can-do approach that he brings to every project.
-        I would not hesitate to work with Mike and can&apos;t
-        recommend him enough for anyone looking for professional and
-        inspiring output.
+        It's been an absolute dream working with Mike. His ability to
+        grasp projects quickly coupled with his flexibility and
+        creative vision make him an invaluable asset to the team. Mike
+        has a rare, genuine passion for his craft, with a tenacious
+        and can-do approach that he brings to every project. I would
+        not hesitate to work with Mike and can't recommend him enough
+        for anyone looking for professional and inspiring output.
       </p>
       <div className="company-card">
         <img src={Wwyd} alt="wwyd films" />
@@ -227,9 +227,20 @@ const Recommendation = () => {
   );
 };
 
-const VideoGrid = ({ videoGridRef, videos }) => {
+const VideoGrid = ({ videoGridRef, videos, handleDownBtn }) => {
   return (
     <StyledVideoGrid ref={videoGridRef}>
+      <button
+        className="video-grid-arrow"
+        onClick={handleDownBtn}
+        type="button"
+      >
+        <img
+          src={ArrowDown}
+          alt="navigate to introduction"
+          id="to-hero"
+        />
+      </button>
       <div className="video-grid-container">
         {videos.map(({ url }) => (
           <div className="video-item">
@@ -267,9 +278,14 @@ const Home = () => {
           reelRef={refs.reelRef}
           handleDownBtn={handleDownBtn}
         />
-        <VideoGrid videos={videos} videoGridRef={refs.videoGridRef} />
+        <VideoGrid
+          videos={videos}
+          videoGridRef={refs.videoGridRef}
+          handleDownBtn={handleDownBtn}
+        />
         <Hero heroRef={refs.heroRef} handleDownBtn={handleDownBtn} />
         <Recommendation />
+        <Footer />
       </StyledHomeContainer>
     </main>
   );

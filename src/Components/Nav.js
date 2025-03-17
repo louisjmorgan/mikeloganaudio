@@ -50,6 +50,74 @@ const NavSocialButtons = () => {
   );
 };
 
+const FooterNavLinksContainer = ({ closeMenu }) => {
+  return (
+    <StyledNavLinks className="footer-nav">
+      <li>
+        <NavLink
+          exact
+          to="/"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/game-audio"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Game Audio
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/film-audio"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Film & TV
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/free-sfx"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Free SFX
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/contact"
+          activeClassName="selected"
+          onClick={closeMenu}
+        >
+          Contact
+        </NavLink>
+      </li>
+    </StyledNavLinks>
+  );
+};
+
+const Footer = () => {
+  return (
+    <StyledNavContainer className="footer">
+      <StyledNavBar>
+        <div className="navbar footer-navbar">
+          <NavLink exact to="/" className="logo">
+            <img src={MikeLoganAudio} alt="Mike Logan Audio Logo" />
+          </NavLink>
+          <FooterNavLinksContainer />
+        </div>
+      </StyledNavBar>
+    </StyledNavContainer>
+  );
+};
+
 const NavLinksContainer = ({ closeMenu }) => {
   return (
     <StyledNavLinks>
@@ -159,4 +227,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export { Nav as default, Footer };
