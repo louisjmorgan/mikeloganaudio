@@ -254,8 +254,13 @@ export const StyledVideoGrid = styled.section`
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 8rem;
+  position: relative;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .video-grid-container {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1, min-content);
     justify-content: center;
@@ -263,17 +268,45 @@ export const StyledVideoGrid = styled.section`
       grid-template-columns: repeat(2, min-content);
     }
   }
+
+  .video-grid-arrow {
+    position: absolute;
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    z-index: 9999;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media only screen and (min-width: 1200px) {
+      display: block;
+    }
+    @media only screen and (min-width: 1850px) {
+      left: 7%;
+    }
+
+    img {
+      z-index: 9998;
+      width: 10rem;
+      transform: scaleX(-1);
+    }
+  }
+
   .video-item {
     position: relative;
-    width: 60vh;
-    height: 30vh;
+    width: 50vh;
+    height: 28vh;
     @media only screen and (min-width: 500px) {
-      height: 20vh;
-      width: 40vh;
+      height: 18vh;
+      width: 35vh;
     }
     @media only screen and (min-width: 800px) {
-      height: 40vh;
-      width: 60vh;
+      height: 35vh;
+      width: 55vh;
     }
     iframe {
       position: absolute;

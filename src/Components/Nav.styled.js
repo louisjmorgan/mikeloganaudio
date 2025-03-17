@@ -6,8 +6,51 @@ const StyledNavContainer = styled.nav`
   width: 100vw;
   position: relative;
   overflow-x: hidden;
-
   z-index: 99999;
+
+  &.footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-text);
+    text-align: center;
+
+    ${StyledNavBar} {
+      position: relative;
+      left: 0;
+    }
+
+    .footer-navbar {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    ${StyledNavLinks} {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+      li {
+        display: inline-block;
+        padding: 0;
+      }
+
+      a {
+        font-size: 1.25rem;
+      }
+    }
+
+    .logo {
+      margin-left: 0;
+    }
+  }
+
   @media only screen and (min-width: 1200px) {
     width: 100%;
     margin-bottom: 2rem;
@@ -130,6 +173,22 @@ const StyledNavLinks = styled.ul`
     font-weight: 400;
     @media only screen and (min-width: 1200px) {
       font-size: 1.25rem;
+    }
+  }
+
+  &.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0;
     }
   }
 `;
