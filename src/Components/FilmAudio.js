@@ -16,6 +16,14 @@ const content = [
   },
   {
     description:
+      'Recently sound designed this 60-second Raindance Film Festival horror short over an extended Sunday afternoon (OK and maybe evening...), due to timing constraints. No location sound/dialogue, short timeframe, unhinged sci-fi vibe - had a lot of fun with this one. They do say limitation breeds creativity!',
+    id: 1,
+    subtitle: 'Sci-Fi / Horror Short',
+    title: 'UPDATE Y/N?:',
+    url: 'https://player.vimeo.com/video/1164071172',
+  },
+  {
+    description:
       'A short sci-fi/western hybrid film I worked on in collaboration with a couple of VFX students at university. The film was shot with no location sound, so I was responsible for crafting the soundscape of the world from scratch. This included mixing howling praerie winds with heightened leather foley to bring out the western feel, as well as synthesizing a robotic language and a screaming spaceship engine.',
     id: 1,
     subtitle: 'Short Space Western Film with VFX',
